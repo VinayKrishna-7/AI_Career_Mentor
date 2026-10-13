@@ -1,14 +1,14 @@
 # CareerMentor
 
-A career acceleration and study execution platform designed to bridge the gap between learning and landing your target tech role. CareerMentor benchmarks your skills against real-world industry requirements, generates structured learning roadmaps, optimizes resumes for ATS standards, and organizes daily focus sessions.
+CareerMentor guides you from learning to getting hired. It finds your skill gaps, builds a step-by-step study roadmap, and helps you polish your resume and track job applications.
 
 ## Features
 
-- **Roadmaps & Milestones**: Phase-by-phase learning paths with completion tracking.
-- **Skill-Gap Analysis**: Taxonomy comparisons identifying missing skills for target roles.
-- **Resume Suite**: ATS keyword analysis and STAR-format bullet point refinement.
-- **Study Planner**: Timetable generator with an integrated countdown focus timer.
-- **Application Tracker**: Kanban pipeline to manage job applications.
+- **Roadmaps & Milestones**: Step-by-step learning paths with progress tracking.
+- **Skill Gap Finder**: Compares your skills with real job requirements to show what to learn next.
+- **Resume Suite**: Improves resume bullet points and checks keyword matching.
+- **Daily Study Planner**: Sets daily study hours with a built-in focus timer.
+- **Job Tracker**: A simple board to track your job applications from applied to hired.
 
 ## Getting Started
 
