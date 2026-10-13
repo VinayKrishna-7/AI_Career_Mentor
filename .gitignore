@@ -11,6 +11,9 @@ server/.env.*
 !.env.example
 !server/.env.example
 
+# Local Data & Runtime Databases
+server/data/*.json
+
 # Build Outputs
 dist/
 client/dist/

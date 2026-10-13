@@ -1,6 +1,8 @@
-# CareerMentor
-
-An AI-powered career intelligence and study acceleration platform. CareerMentor combines role recommendations, skill-gap analysis, interactive roadmaps, and daily study planning to help developers and students navigate their professional growth.
+<div align="center">
+  <img src="client/public/emblem.svg" alt="CareerMentor Logo" width="68" height="68" />
+  <h1>CareerMentor</h1>
+  <p>AI-powered career intelligence, skill mapping, and study acceleration platform.</p>
+</div>
 
 ---
 
