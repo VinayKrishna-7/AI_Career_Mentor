@@ -1,6 +1,6 @@
 # CareerMentor
 
-A career intelligence and study planning platform for tracking roadmaps, analyzing skill gaps, and scheduling daily focus sessions.
+A career acceleration and study execution platform designed to bridge the gap between learning and landing your target tech role. CareerMentor benchmarks your skills against real-world industry requirements, generates structured learning roadmaps, optimizes resumes for ATS standards, and organizes daily focus sessions.
 
 ## Features
 
