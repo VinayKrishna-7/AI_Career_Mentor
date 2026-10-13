@@ -1,29 +1,25 @@
-<div align="center">
-  <img src="client/public/emblem.svg" alt="CareerMentor Logo" width="68" height="68" />
-  <h1>CareerMentor</h1>
-  <p>AI-powered career intelligence, skill mapping, and study acceleration platform.</p>
-</div>
+# CareerMentor
+
+A modern career intelligence and study acceleration platform for tracking engineering roadmaps, analyzing skill gaps against industry taxonomies, and structuring daily focus sessions.
 
 ---
 
-## Features
+## Core Capabilities
 
-- **Career Roadmaps & Fit Analysis**: Personalized role exploration with structured learning milestones, phase checklists, and readiness scores.
-- **Deterministic Skill-Gap Mapping**: Compares current skills against industry role taxonomies and job postings to pinpoint missing competencies.
-- **Resume Suite**: Upload PDF resumes to evaluate ATS keyword compatibility and transform bullet points using the Google XYZ / STAR framework.
-- **Study Planner & Focus Timer**: Generate structured daily timetables and execute focus blocks with an integrated Pomodoro timer and audio chimes.
-- **Job Tracker**: Kanban-style pipeline to monitor job applications through screening, interviewing, and offers.
-- **AI Career Mentor Chat**: Context-aware guidance powered by Gemini / OpenAI with built-in heuristic fallbacks for offline development.
+- **Career Roadmaps & Milestones**: Structured career progression paths with phase-by-phase checklists and task completion metrics.
+- **Skill-Gap Analysis**: Deterministic taxonomy matching comparing personal skills against role requirements and raw job descriptions.
+- **Resume Suite**: PDF resume parsing with keyword density analysis and STAR-format accomplishment bullet refinement.
+- **Study Planner & Focus Timer**: Daily time allocation engine with sequential timetables and integrated countdown timer.
+- **Job Application Pipeline**: Kanban tracking board managing applications across screening, technical interviews, and offers.
+- **Career Mentor**: Contextual advisory interface for tailored curriculum guidance and interview preparation.
 
 ---
 
-## Tech Stack
+## Architecture & Stack
 
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend** | React 19, Vite, Tailwind CSS, Lucide React, Recharts |
-| **Backend** | Node.js, Express.js, PostgreSQL (`pg`), JWT, Zod |
-| **AI Integration** | Google Gemini, OpenAI, or local deterministic heuristic engine |
+- **Client**: React 19, Vite, Tailwind CSS, Lucide Icons, Recharts
+- **Server**: Node.js, Express, PostgreSQL (`pg`), JWT authentication, Zod validation
+- **Analysis Engine**: Heuristic skill matching with optional Gemini / OpenAI enrichment
 
 ---
 
@@ -31,33 +27,31 @@
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js 18 or higher
 - PostgreSQL (local instance or cloud database such as Neon / Supabase)
 
-### Installation
+### Setup
 
-1. **Install dependencies** for root, client, and server:
+1. **Install dependencies**:
    ```bash
    npm run install:all
    ```
 
-2. **Configure environment variables**:
+2. **Configure environment**:
    ```bash
    cp server/.env.example server/.env
    ```
-   *(Update `server/.env` with your PostgreSQL `DATABASE_URL` and optional AI API keys).*
 
-3. **Initialize the database** (optional for persistent DB):
+3. **Initialize database schema**:
    ```bash
    npm run migrate
    npm run seed
    ```
 
-4. **Start the application**:
+4. **Launch development environment**:
    ```bash
    npm run dev
    ```
 
 - Frontend: [http://localhost:5173](http://localhost:5173)
 - Backend API: [http://localhost:5000](http://localhost:5000)
-
