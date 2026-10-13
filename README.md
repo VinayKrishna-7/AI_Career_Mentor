@@ -1,6 +1,6 @@
-# CareerMentor
+# AI Career Mentor
 
-CareerMentor guides you from learning to getting hired. It finds your skill gaps, builds a step-by-step study roadmap, and helps you polish your resume and track job applications.
+AI Career Mentor is an AI-powered career guidance platform that helps users identify suitable career paths, analyze skill gaps, generate personalized learning roadmaps, improve resumes, and prepare for interviews. It provides tailored recommendations to help users achieve their career goals.
 
 ## Features
 
@@ -23,5 +23,3 @@ cp server/.env.example server/.env
 npm run dev
 ```
 
-- App: http://localhost:5173
-- API: http://localhost:5000
