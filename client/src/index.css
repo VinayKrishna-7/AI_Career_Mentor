@@ -1,0 +1,413 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-obsidian: #101312;
+  --color-sidebar: #0B0F0E;
+  --color-charcoal: #191E1C;
+  --color-elevated: #222825;
+  --color-primary-accent: #2A8278;
+  --color-secondary-accent: #D5B777;
+  --color-warm-white: #F5F4EF;
+  --color-cool-gray: #A2AAA5;
+  --color-border-charcoal: #2A302D;
+}
+
+/* ==============================================================
+ * DUAL-THEME CSS VARIABLES SYSTEM
+ *
+ * DARK THEME:  Obsidian Luxury Palette
+ * LIGHT THEME: Soft Ivory & Warm White Luxury Palette
+ * ============================================================== */
+
+:root,
+html.dark {
+  color-scheme: dark;
+  --bg-app: #101312;              /* Obsidian */
+  --bg-sidebar: #0B0F0E;          /* Deep Black */
+  --bg-header: #0B0F0E;           /* Deep Black */
+  --bg-card: #191E1C;             /* Charcoal */
+  --bg-elevated: #222825;         /* Soft Charcoal */
+  --bg-input: #222825;            /* Input Background */
+  --border-subtle: #2A302D;       /* Subtle Charcoal Border */
+  --text-primary: #F5F4EF;        /* Warm White Text */
+  --text-secondary: #A2AAA5;      /* Cool Gray Secondary Text */
+  --text-muted: #6E7772;
+  --accent-primary: #2A8278;      /* Deep Teal */
+  --accent-primary-hover: #236e66;
+  --accent-secondary: #D5B777;    /* Champagne Gold */
+  --accent-secondary-hover: #c4a562;
+  --shadow-subtle: 0 4px 14px 0 rgba(0, 0, 0, 0.45);
+}
+
+html.light {
+  color-scheme: light;
+  --bg-app: #F8F5ED;              /* Soft Ivory */
+  --bg-sidebar: #F3ECE0;          /* Warm Ivory / Beige */
+  --bg-header: #F3ECE0;           /* Warm Ivory / Beige */
+  --bg-card: #FFFFFF;             /* Pure White */
+  --bg-elevated: #EDE5D8;         /* Warm Beige */
+  --bg-input: #FFFFFF;            /* Pure White Input */
+  --border-subtle: #E2D9C8;       /* Subtle Warm Border */
+  --text-primary: #101312;        /* Obsidian (High Contrast) */
+  --text-secondary: #5F6864;      /* Charcoal Gray Secondary */
+  --text-muted: #88918C;
+  --accent-primary: #2A8278;      /* Deep Teal */
+  --accent-primary-hover: #236e66;
+  --accent-secondary: #A67D2E;    /* Deep Champagne Gold / Bronze */
+  --accent-secondary-hover: #8C6824;
+  --shadow-subtle: 0 4px 14px 0 rgba(117, 102, 74, 0.08);
+}
+
+@layer base {
+  body {
+    @apply antialiased font-sans transition-colors duration-200;
+    background-color: var(--bg-app) !important;
+    color: var(--text-primary) !important;
+  }
+
+  ::selection {
+    background-color: #2A8278 !important;
+    color: #F5F4EF !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 1. APPLICATION & PAGE BACKGROUNDS
+   * ------------------------------------------------------------- */
+  .min-h-screen,
+  [class*="min-h-screen"],
+  [class*="bg-[#101312]"],
+  [class*="dark:bg-[#101312]"],
+  [class*="bg-[#F8F5ED]"],
+  [class*="dark:bg-[#002626]"],
+  [class*="dark:bg-[#002B2B]"],
+  [class*="dark:bg-[#0f0f11]"],
+  [class*="dark:bg-black"] {
+    background-color: var(--bg-app) !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 2. SIDEBAR & HEADER
+   * ------------------------------------------------------------- */
+  aside,
+  [class*="bg-[#0B0F0E]"],
+  [class*="dark:bg-[#0B0F0E]"] {
+    background-color: var(--bg-sidebar) !important;
+  }
+
+  header[class*="bg-"] {
+    background-color: var(--bg-header) !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 3. CARDS & SURFACES
+   * ------------------------------------------------------------- */
+  .bg-white,
+  [class*="bg-[#191E1C]"],
+  [class*="dark:bg-[#191E1C]"],
+  [class*="dark:bg-[#003B3B]"],
+  [class*="dark:bg-[#161619]"],
+  [class*="dark:bg-[#101012]"],
+  [class*="dark:bg-[#0a0a0c]"],
+  [class*="dark:bg-[#0c0c0f]"],
+  [class*="dark:bg-stone-900"],
+  [class*="dark:bg-zinc-950"],
+  [class*="dark:bg-zinc-900"],
+  .rounded-3xl.border:not(button):not(input),
+  .rounded-2xl.border:not(button):not(input):not([class*="bg-[#222825]"]):not([class*="bg-[#2A8278]"]),
+  .rounded-xl.border:not(button):not(input):not([class*="bg-[#222825]"]):not([class*="bg-[#2A8278]"]) {
+    background-color: var(--bg-card) !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 4. ELEVATED SURFACES (Modals, Dropdowns, Badges, Tooltips)
+   * ------------------------------------------------------------- */
+  [class*="bg-[#222825]"],
+  [class*="dark:bg-[#222825]"],
+  [class*="bg-[#faf7f2]"],
+  [class*="bg-[#f5efe4]"],
+  [class*="bg-[#ede6d8]"],
+  [class*="bg-[#F4EAD4]"],
+  [class*="bg-[#F2E7D3]"],
+  [class*="dark:bg-[#004D4D]"],
+  [class*="dark:bg-[#1e1e23]"],
+  [class*="dark:bg-[#1a1a1e]"],
+  [class*="dark:bg-[#25252b]"],
+  [class*="dark:bg-stone-800"] {
+    background-color: var(--bg-elevated) !important;
+  }
+
+  /* Floating elements: Dropdown menus, modals, dialogs */
+  [class*="shadow-xl"]:not(button):not(aside),
+  [class*="shadow-2xl"]:not(button):not(aside),
+  .z-50.rounded-2xl {
+    background-color: var(--bg-elevated) !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 5. BORDERS
+   * ------------------------------------------------------------- */
+  [class*="border-[#2A302D]"],
+  [class*="dark:border-[#2A302D]"],
+  [class*="border-[#ded6c5]"],
+  [class*="border-[#e8e2d5]"],
+  [class*="border-[#e2dad0]"],
+  [class*="border-[#E2C99B]"],
+  [class*="border-stone-200"],
+  [class*="border-stone-300"],
+  [class*="border-slate-200"],
+  [class*="dark:border-[#75664A]"],
+  [class*="dark:border-[#2a2a30]"],
+  [class*="dark:border-stone-800"],
+  [class*="dark:border-stone-700"],
+  [class*="dark:border-zinc-800"],
+  [class*="dark:border-zinc-850"],
+  [class*="dark:border-zinc-900"] {
+    border-color: var(--border-subtle) !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 6. PRIMARY TEXT
+   * ------------------------------------------------------------- */
+  h1:not([class*="text-[#2A8278]"]):not([class*="text-[#D5B777]"]):not(button *),
+  h2:not([class*="text-[#2A8278]"]):not([class*="text-[#D5B777]"]):not(button *),
+  h3:not([class*="text-[#2A8278]"]):not([class*="text-[#D5B777]"]):not(button *),
+  h4:not([class*="text-[#2A8278]"]):not([class*="text-[#D5B777]"]):not(button *),
+  h5:not([class*="text-[#2A8278]"]):not([class*="text-[#D5B777]"]):not(button *),
+  h6:not([class*="text-[#2A8278]"]):not([class*="text-[#D5B777]"]):not(button *),
+  [class*="text-[#F5F4EF]"]:not(button *):not([class*="bg-[#2A8278]"] *):not(.chat-bubble-user *):not(aside nav a.active *),
+  [class*="text-stone-900"]:not(button *):not([class*="bg-[#2A8278]"] *),
+  [class*="text-[#003B3B]"]:not(button *):not([class*="bg-[#2A8278]"] *),
+  [class*="dark:text-white"],
+  [class*="dark:text-[#f5efe4]"],
+  [class*="dark:text-[#faf7f2]"],
+  [class*="dark:text-zinc-100"],
+  [class*="dark:text-zinc-200"],
+  [class*="dark:text-[#101012]"],
+  [class*="dark:text-stone-900"],
+  [class*="dark:text-stone-950"],
+  [class*="dark:text-black"],
+  [class*="dark:text-slate-900"] {
+    color: var(--text-primary) !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 7. SECONDARY TEXT
+   * ------------------------------------------------------------- */
+  [class*="text-stone-400"]:not(button *):not([class*="bg-[#2A8278]"] *),
+  [class*="text-stone-500"]:not(button *):not([class*="bg-[#2A8278]"] *),
+  [class*="text-stone-600"]:not(button *):not([class*="bg-[#2A8278]"] *),
+  [class*="text-slate-500"]:not(button *):not([class*="bg-[#2A8278]"] *),
+  [class*="text-[#75664A]"]:not(button *):not([class*="bg-[#2A8278]"] *),
+  [class*="text-[#A2AAA5]"]:not(button *):not([class*="bg-[#2A8278]"] *),
+  [class*="dark:text-[#E2C99B]"],
+  [class*="dark:text-[#A2AAA5]"],
+  [class*="dark:text-stone-400"],
+  [class*="dark:text-stone-500"],
+  [class*="dark:text-zinc-400"],
+  [class*="dark:text-zinc-500"] {
+    color: var(--text-secondary) !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 8. FORM CONTROLS: Inputs, Selects, and Textareas
+   * ------------------------------------------------------------- */
+  input, select, textarea {
+    background-color: var(--bg-input) !important;
+    border-color: var(--border-subtle) !important;
+    color: var(--text-primary) !important;
+  }
+  input::placeholder, textarea::placeholder {
+    color: var(--text-secondary) !important;
+    opacity: 0.8 !important;
+  }
+  select option {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+  }
+  input:focus, select:focus, textarea:focus, button:focus-visible {
+    outline: none !important;
+    border-color: #2A8278 !important;
+    box-shadow: 0 0 0 1px #2A8278 !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 9. PRIMARY ACCENT: Deep Teal (#2A8278) & CTA Buttons
+   * (Text on primary teal is ALWAYS Warm White in both themes)
+   * ------------------------------------------------------------- */
+  button.bg-stone-900,
+  button.bg-black,
+  button[class*="bg-[#003B3B]"],
+  button[class*="bg-[#2A8278]"],
+  button[class*="dark:bg-[#D8BC83]"],
+  button[class*="dark:bg-[#f5efe4]"],
+  button[class*="dark:bg-[#faf7f2]"],
+  a.bg-stone-900,
+  a[class*="bg-stone-900"],
+  a[class*="bg-[#2A8278]"],
+  a[class*="dark:bg-[#f5efe4]"],
+  a[class*="dark:bg-[#faf7f2]"],
+  .bg-indigo-600,
+  .bg-indigo-700,
+  .bg-indigo-500 {
+    background-color: #2A8278 !important;
+    color: #F5F4EF !important;
+  }
+
+  button.bg-stone-900:hover,
+  button.bg-black:hover,
+  button[class*="bg-[#003B3B]"]:hover,
+  button[class*="bg-[#2A8278]"]:hover,
+  button[class*="dark:bg-[#D8BC83]"]:hover,
+  a.bg-stone-900:hover,
+  a[class*="bg-stone-900"]:hover,
+  a[class*="bg-[#2A8278]"]:hover,
+  .hover\:bg-indigo-700:hover,
+  .hover\:bg-indigo-600:hover {
+    background-color: #236e66 !important;
+    color: #F5F4EF !important;
+  }
+
+  button.bg-stone-900 *,
+  button[class*="bg-[#003B3B]"] *,
+  button[class*="bg-[#2A8278]"] *,
+  button[class*="dark:bg-[#D8BC83]"] *,
+  a.bg-stone-900 *,
+  a[class*="bg-[#2A8278]"] * {
+    color: #F5F4EF !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 10. SECONDARY ACCENT: Champagne Gold
+   * (#D5B777 in Dark, #A67D2E in Light)
+   * ------------------------------------------------------------- */
+  .text-amber-500,
+  [class*="text-[#D8BC83]"],
+  [class*="text-[#D5B777]"],
+  [class*="dark:text-[#D8BC83]"],
+  [class*="dark:text-[#D5B777]"] {
+    color: var(--accent-secondary) !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 11. CAREER CHAT MESSAGE BUBBLES
+   * ------------------------------------------------------------- */
+  .chat-bubble-user,
+  [data-chat-bubble="user"] {
+    background-color: #2A8278 !important;
+    color: #F5F4EF !important;
+    border-color: #2A8278 !important;
+  }
+  .chat-bubble-user *,
+  [data-chat-bubble="user"] * {
+    color: #F5F4EF !important;
+  }
+
+  .chat-bubble-bot,
+  [data-chat-bubble="bot"] {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-subtle) !important;
+  }
+  .chat-bubble-bot *,
+  [data-chat-bubble="bot"] * {
+    color: var(--text-primary) !important;
+  }
+  .chat-bubble-bot strong,
+  [data-chat-bubble="bot"] strong,
+  .chat-bubble-bot th,
+  [data-chat-bubble="bot"] th {
+    color: var(--accent-secondary) !important;
+  }
+  .chat-bubble-bot code,
+  [data-chat-bubble="bot"] code {
+    background-color: var(--bg-elevated) !important;
+    border-color: var(--border-subtle) !important;
+    color: var(--accent-secondary) !important;
+  }
+  .chat-bubble-bot pre,
+  [data-chat-bubble="bot"] pre {
+    background-color: var(--bg-sidebar) !important;
+    border-color: var(--border-subtle) !important;
+  }
+  .chat-bubble-bot blockquote,
+  [data-chat-bubble="bot"] blockquote {
+    background-color: var(--bg-elevated) !important;
+    border-left-color: #2A8278 !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 12. SIDEBAR NAVIGATION LINKS
+   * ------------------------------------------------------------- */
+  aside nav a.active,
+  aside nav a[class*="bg-[#2A8278]"],
+  aside nav a[class*="bg-[#D8BC83]"],
+  aside nav a[class*="bg-[#E2C99B]"] {
+    background-color: #2A8278 !important;
+    color: #F5F4EF !important;
+    border-color: #2A8278 !important;
+  }
+  aside nav a.active *,
+  aside nav a[class*="bg-[#2A8278]"] * {
+    color: #F5F4EF !important;
+  }
+
+  aside nav a:not(.active):not([class*="bg-[#2A8278]"]) {
+    color: var(--text-secondary) !important;
+  }
+  aside nav a:not(.active):not([class*="bg-[#2A8278]"]):hover {
+    background-color: var(--bg-elevated) !important;
+    color: var(--text-primary) !important;
+  }
+  aside nav a:not(.active):not([class*="bg-[#2A8278]"]):hover * {
+    color: var(--text-primary) !important;
+  }
+
+  /* -------------------------------------------------------------
+   * 13. PROGRESS BARS & BADGES
+   * ------------------------------------------------------------- */
+  [class*="bg-[#ede6d8]"],
+  [class*="rounded-full"][class*="h-2"],
+  [class*="rounded-full"][class*="h-1.5"],
+  [class*="rounded-full"][class*="h-3"] {
+    background-color: var(--bg-elevated) !important;
+    border-color: var(--border-subtle) !important;
+  }
+  [class*="bg-[#ede6d8]"] > div,
+  [class*="rounded-full"][class*="h-2"] > div,
+  [class*="rounded-full"][class*="h-1.5"] > div,
+  [class*="rounded-full"][class*="h-3"] > div {
+    background-color: #2A8278 !important;
+  }
+
+  .bg-indigo-50,
+  [class*="bg-indigo-50\/"],
+  .bg-purple-50,
+  .bg-emerald-50,
+  .bg-rose-50,
+  .bg-amber-50,
+  [class*="dark:bg-indigo-950"],
+  [class*="dark:bg-emerald-950"],
+  [class*="dark:bg-amber-950"] {
+    background-color: var(--bg-elevated) !important;
+    color: var(--text-secondary) !important;
+    border-color: var(--border-subtle) !important;
+  }
+
+  /* Gradients removal */
+  [class*="bg-gradient-to-"]:not([class*="bg-[#2A8278]"]) {
+    background-image: none !important;
+    background-color: var(--bg-card) !important;
+  }
+  [class*="bg-clip-text"] {
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: currentColor !important;
+  }
+
+  /* Shadows */
+  .shadow-xs, .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl {
+    box-shadow: var(--shadow-subtle) !important;
+  }
+}

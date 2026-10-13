@@ -1,0 +1,20 @@
+{
+  "name": "ai-career-mentor",
+  "version": "1.0.0",
+  "description": "AI Career Mentor — Full-Stack AI-Powered Career Guidance Platform",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm run start --prefix server",
+    "migrate": "npm run migrate --prefix server",
+    "seed": "npm run seed --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

@@ -1,0 +1,2180 @@
+{
+  "users": [
+    {
+      "id": "00000000-0000-4000-8000-000000000001",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "password_hash": "$2a$10$VmXSYj2.G.nZ10.LKQouj.h/mD43ArVq.vu9TAzL7Ie9HAdAuyJEa",
+      "created_at": "2026-10-11T17:05:49.195Z",
+      "updated_at": "2026-10-11T17:05:49.195Z"
+    },
+    {
+      "id": "113307f6-9c4d-45b8-a461-5725c2e07b36",
+      "name": "Test Persistence User",
+      "email": "tester_1791738610316@example.com",
+      "password_hash": "$2a$10$pBCk1/RTANsPNirwzIcAt.BxHAudaAKgaAbK3muDkzxgeyReXiG3e",
+      "created_at": "2026-10-11T17:10:10.494Z",
+      "updated_at": "2026-10-11T17:10:10.494Z"
+    },
+    {
+      "id": "916e26a2-0504-48f1-95cd-ba3853960a90",
+      "name": "Demo",
+      "email": "demo@example.com",
+      "password_hash": "$2a$10$Zj6a0Ly/w3kqWCFkeTq.JesuMidQH.HPp/hzvjm6mW77DpFCEZ8wW",
+      "created_at": "2026-10-11T18:28:37.790Z",
+      "updated_at": "2026-10-11T18:28:37.790Z"
+    },
+    {
+      "id": "e49962d0-3f8a-4731-a8d0-074f22ef6c39",
+      "name": "Test Student",
+      "email": "student_test@example.com",
+      "password_hash": "$2a$10$Ge4l13RMK4tJkrBShpx/1O0ulNJYX4Y1m0Krp9W77KAXBtF1ApB7a",
+      "created_at": "2026-10-12T18:56:15.222Z",
+      "updated_at": "2026-10-12T18:56:15.222Z"
+    },
+    {
+      "id": "21dedcde-9eee-409f-a1a6-0aa12c87661a",
+      "name": "Obsidian User",
+      "email": "obsidian_tester@mentor.com",
+      "password_hash": "$2a$10$CU8WP5DGRask.hMFStSWK.Hl5Wj/hXWe0mLvCvBgfvE6pgI9ZNU2u",
+      "created_at": "2026-10-12T19:31:45.527Z",
+      "updated_at": "2026-10-12T19:31:45.527Z"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "education": "B.Tech CS",
+      "degree": "Computer Science",
+      "skills": [
+        "React",
+        "Node.js",
+        "Python"
+      ],
+      "interests": [
+        "AI Systems"
+      ],
+      "experience_level": "Intermediate",
+      "target_career": "AI / Machine Learning Engineer",
+      "career_goals": "",
+      "learning_preferences": "Hands-on projects",
+      "weekly_study_hours": 15,
+      "created_at": "2026-10-11T17:05:49.195Z",
+      "updated_at": "2026-10-11T18:26:38.228Z"
+    },
+    {
+      "id": "041d79e4-4cb2-4698-8111-d347b2b4ed2e",
+      "user_id": "113307f6-9c4d-45b8-a461-5725c2e07b36",
+      "education": "",
+      "degree": "",
+      "skills": [],
+      "interests": [],
+      "experience_level": "Beginner",
+      "target_career": "Full-Stack Developer",
+      "career_goals": "",
+      "learning_preferences": "Hands-on projects",
+      "weekly_study_hours": 10,
+      "created_at": "2026-10-11T17:10:10.495Z",
+      "updated_at": "2026-10-11T17:10:10.495Z"
+    },
+    {
+      "id": "7ed117d9-2794-483b-9a2b-fdba3f6a21db",
+      "user_id": "916e26a2-0504-48f1-95cd-ba3853960a90",
+      "education": "university",
+      "degree": "b.tech",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "SQL",
+        "Python",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Git",
+        "REST APIs",
+        "MongoDB",
+        "AWS"
+      ],
+      "interests": [
+        "Full-Stack",
+        "Software developer"
+      ],
+      "experience_level": "Beginner",
+      "target_career": "Software Developer",
+      "career_goals": "High package job",
+      "learning_preferences": "Hands-on projects",
+      "weekly_study_hours": 15,
+      "created_at": "2026-10-11T18:28:37.793Z",
+      "updated_at": "2026-10-12T06:11:59.159Z"
+    },
+    {
+      "id": "aa0466a2-8353-4a02-8e9b-b00dab548cc3",
+      "user_id": "e49962d0-3f8a-4731-a8d0-074f22ef6c39",
+      "education": "B.S. Computer Science",
+      "degree": "B.S.",
+      "skills": [
+        "Python",
+        "Docker",
+        "JavaScript",
+        "React"
+      ],
+      "interests": [],
+      "experience_level": "Beginner",
+      "target_career": "Full-Stack Developer",
+      "career_goals": "",
+      "learning_preferences": "Hands-on projects",
+      "weekly_study_hours": 10,
+      "created_at": "2026-10-12T18:56:15.224Z",
+      "updated_at": "2026-10-12T18:56:46.794Z"
+    },
+    {
+      "id": "be76eb09-de74-41a2-8628-b1c66d398154",
+      "user_id": "21dedcde-9eee-409f-a1a6-0aa12c87661a",
+      "education": "",
+      "degree": "",
+      "skills": [],
+      "interests": [],
+      "experience_level": "Beginner",
+      "target_career": "Full-Stack Developer",
+      "career_goals": "",
+      "learning_preferences": "Hands-on projects",
+      "weekly_study_hours": 10,
+      "created_at": "2026-10-12T19:31:45.530Z",
+      "updated_at": "2026-10-12T19:31:45.530Z"
+    }
+  ],
+  "roadmaps": [
+    {
+      "id": "e250c8d4-799b-4015-a9d8-b9cf3f43aac6",
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "career_role_id": "55555555-5555-4555-8555-555555555555",
+      "career_title": "AI / Machine Learning Engineer",
+      "roadmap_data": {
+        "careerTitle": "AI / Machine Learning Engineer",
+        "overview": "A structured step-by-step pathway to becoming a proficient AI / Machine Learning Engineer, tailored for Intermediate learners.",
+        "currentAssessment": "Building upon your current strengths (React, Node.js, Python) to address core industry requirements.",
+        "skillGaps": [
+          "Core Architecture",
+          "Testing & CI/CD",
+          "Production Deployment"
+        ],
+        "estimatedTotalWeeks": 14,
+        "phases": [
+          {
+            "name": "Phase 1: Core Fundamentals & Language Mastery",
+            "durationWeeks": 3,
+            "objectives": [
+              "Master programming paradigms",
+              "Build algorithmic problem-solving confidence"
+            ],
+            "tasks": [
+              {
+                "title": "Modern Language Features & Syntax",
+                "description": "Review modern ECMAScript / Python language features, data types, and closures.",
+                "estimatedHours": 8
+              },
+              {
+                "title": "Data Structures in Practice",
+                "description": "Implement arrays, maps, sets, and basic tree lookups in real-world scenarios.",
+                "estimatedHours": 8
+              }
+            ],
+            "projectSuggestion": {
+              "title": "CLI Data Processing Tool",
+              "description": "Build a command-line utility that parses JSON/CSV data and generates statistical summaries."
+            },
+            "completionCriteria": "Pass basic technical coding challenges and build a working CLI tool."
+          },
+          {
+            "name": "Phase 2: Framework & Architecture Fundamentals",
+            "durationWeeks": 3,
+            "objectives": [
+              "Learn industry-standard frameworks",
+              "Implement state and data flow architectures"
+            ],
+            "tasks": [
+              {
+                "title": "Component Hierarchy & State Management",
+                "description": "Design maintainable modular components with unidirectional data flow.",
+                "estimatedHours": 10
+              },
+              {
+                "title": "API Integration & Asynchronous Workflows",
+                "description": "Handle REST API data fetching, loading spinners, and error boundaries.",
+                "estimatedHours": 8
+              }
+            ],
+            "projectSuggestion": {
+              "title": "Interactive Dashboard Application",
+              "description": "Build an interactive web application with filtering, search, and dynamic visual indicators."
+            },
+            "completionCriteria": "Deliver a responsive user interface integrated with live API endpoints."
+          },
+          {
+            "name": "Phase 3: Backend Services & Database Design",
+            "durationWeeks": 3,
+            "objectives": [
+              "Design relational schemas",
+              "Build secure RESTful endpoints"
+            ],
+            "tasks": [
+              {
+                "title": "Relational Database Schema Design",
+                "description": "Design normalized tables with primary/foreign keys and index optimizations.",
+                "estimatedHours": 8
+              },
+              {
+                "title": "Authentication & Session Handling",
+                "description": "Implement JWT tokens, bcrypt password hashing, and role checks.",
+                "estimatedHours": 8
+              }
+            ],
+            "projectSuggestion": {
+              "title": "Authenticated REST API Service",
+              "description": "Build a secure API service with PostgreSQL persistence and input validation."
+            },
+            "completionCriteria": "All endpoints pass automated tests and enforce proper authentication."
+          },
+          {
+            "name": "Phase 4: Full-Stack Integration & Testing",
+            "durationWeeks": 3,
+            "objectives": [
+              "Connect frontend with backend services",
+              "Add unit and integration tests"
+            ],
+            "tasks": [
+              {
+                "title": "End-to-End System Integration",
+                "description": "Connect client components to database APIs with optimistic updates.",
+                "estimatedHours": 10
+              },
+              {
+                "title": "Testing & Error Handling",
+                "description": "Write unit tests and verify edge-case error behaviors.",
+                "estimatedHours": 6
+              }
+            ],
+            "projectSuggestion": {
+              "title": "Production Portfolio Capstone Project",
+              "description": "Build a full-fledged application solving a specific industry problem."
+            },
+            "completionCriteria": "Deploy a tested web application with live demo and source code on GitHub."
+          },
+          {
+            "name": "Phase 5: Career Prep & Mock Interviews",
+            "durationWeeks": 2,
+            "objectives": [
+              "Polish resume with measurable impact",
+              "Practice technical & behavioral questions"
+            ],
+            "tasks": [
+              {
+                "title": "Resume & Portfolio Enhancement",
+                "description": "Highlight technical stack and quantifiable outcomes on your resume.",
+                "estimatedHours": 6
+              },
+              {
+                "title": "Technical Interview Simulation",
+                "description": "Practice system design and behavioral STAR interview responses.",
+                "estimatedHours": 6
+              }
+            ],
+            "projectSuggestion": {
+              "title": "Developer Portfolio Website",
+              "description": "Deploy a personal portfolio displaying live project links and GitHub repositories."
+            },
+            "completionCriteria": "Complete 3 mock interview simulations and finalize portfolio links."
+          }
+        ]
+      },
+      "created_at": "2026-10-11T18:02:21.567Z",
+      "updated_at": "2026-10-11T18:02:21.567Z"
+    }
+  ],
+  "roadmap_tasks": [
+    {
+      "id": "227d1bd0-7acd-4f9e-afb2-f661bfbe6f4c",
+      "roadmap_id": "e250c8d4-799b-4015-a9d8-b9cf3f43aac6",
+      "title": "Modern Language Features & Syntax",
+      "description": "Review modern ECMAScript / Python language features, data types, and closures.",
+      "phase_name": "Phase 1: Core Fundamentals & Language Mastery",
+      "phase_order": 1,
+      "status": "Completed",
+      "estimated_hours": 8,
+      "completed_at": "2026-10-11T18:02:21.590Z",
+      "created_at": "2026-10-11T18:02:21.569Z",
+      "updated_at": "2026-10-11T18:02:21.590Z"
+    },
+    {
+      "id": "8cefd42c-c0c1-428c-a31b-043830ee27d3",
+      "roadmap_id": "e250c8d4-799b-4015-a9d8-b9cf3f43aac6",
+      "title": "Data Structures in Practice",
+      "description": "Implement arrays, maps, sets, and basic tree lookups in real-world scenarios.",
+      "phase_name": "Phase 1: Core Fundamentals & Language Mastery",
+      "phase_order": 1,
+      "status": "Not Started",
+      "estimated_hours": 8,
+      "completed_at": null,
+      "created_at": "2026-10-11T18:02:21.570Z",
+      "updated_at": "2026-10-11T18:02:21.570Z"
+    },
+    {
+      "id": "b0d9181c-2a90-4d9e-a372-845c561f7b07",
+      "roadmap_id": "e250c8d4-799b-4015-a9d8-b9cf3f43aac6",
+      "title": "Component Hierarchy & State Management",
+      "description": "Design maintainable modular components with unidirectional data flow.",
+      "phase_name": "Phase 2: Framework & Architecture Fundamentals",
+      "phase_order": 2,
+      "status": "Not Started",
+      "estimated_hours": 10,
+      "completed_at": null,
+      "created_at": "2026-10-11T18:02:21.572Z",
+      "updated_at": "2026-10-11T18:02:21.572Z"
+    },
+    {
+      "id": "d026385c-04cf-4276-b313-b2606ea0bd9f",
+      "roadmap_id": "e250c8d4-799b-4015-a9d8-b9cf3f43aac6",
+      "title": "API Integration & Asynchronous Workflows",
+      "description": "Handle REST API data fetching, loading spinners, and error boundaries.",
+      "phase_name": "Phase 2: Framework & Architecture Fundamentals",
+      "phase_order": 2,
+      "status": "Not Started",
+      "estimated_hours": 8,
+      "completed_at": null,
+      "created_at": "2026-10-11T18:02:21.573Z",
+      "updated_at": "2026-10-11T18:02:21.573Z"
+    },
+    {
+      "id": "688a3536-fb01-499f-86a9-7427121db928",
+      "roadmap_id": "e250c8d4-799b-4015-a9d8-b9cf3f43aac6",
+      "title": "Relational Database Schema Design",
+      "description": "Design normalized tables with primary/foreign keys and index optimizations.",
+      "phase_name": "Phase 3: Backend Services & Database Design",
+      "phase_order": 3,
+      "status": "Not Started",
+      "estimated_hours": 8,
+      "completed_at": null,
+      "created_at": "2026-10-11T18:02:21.574Z",
+      "updated_at": "2026-10-11T18:02:21.574Z"
+    },
+    {
+      "id": "0622c781-6701-4794-a69a-1895c8286f97",
+      "roadmap_id": "e250c8d4-799b-4015-a9d8-b9cf3f43aac6",
+      "title": "Authentication & Session Handling",
+      "description": "Implement JWT tokens, bcrypt password hashing, and role checks.",
+      "phase_name": "Phase 3: Backend Services & Database Design",
+      "phase_order": 3,
+      "status": "Not Started",
+      "estimated_hours": 8,
+      "completed_at": null,
+      "created_at": "2026-10-11T18:02:21.576Z",
+      "updated_at": "2026-10-11T18:02:21.576Z"
+    },
+    {
+      "id": "492b9327-972d-4fda-969d-38a5d798ae88",
+      "roadmap_id": "e250c8d4-799b-4015-a9d8-b9cf3f43aac6",
+      "title": "End-to-End System Integration",
+      "description": "Connect client components to database APIs with optimistic updates.",
+      "phase_name": "Phase 4: Full-Stack Integration & Testing",
+      "phase_order": 4,
+      "status": "Not Started",
+      "estimated_hours": 10,
+      "completed_at": null,
+      "created_at": "2026-10-11T18:02:21.577Z",
+      "updated_at": "2026-10-11T18:02:21.577Z"
+    },
+    {
+      "id": "899b39f1-fca8-4989-ba87-e09c115a4628",
+      "roadmap_id": "e250c8d4-799b-4015-a9d8-b9cf3f43aac6",
+      "title": "Testing & Error Handling",
+      "description": "Write unit tests and verify edge-case error behaviors.",
+      "phase_name": "Phase 4: Full-Stack Integration & Testing",
+      "phase_order": 4,
+      "status": "Not Started",
+      "estimated_hours": 6,
+      "completed_at": null,
+      "created_at": "2026-10-11T18:02:21.578Z",
+      "updated_at": "2026-10-11T18:02:21.578Z"
+    },
+    {
+      "id": "1b5d5977-81fa-406a-ac08-a825543b5f9e",
+      "roadmap_id": "e250c8d4-799b-4015-a9d8-b9cf3f43aac6",
+      "title": "Resume & Portfolio Enhancement",
+      "description": "Highlight technical stack and quantifiable outcomes on your resume.",
+      "phase_name": "Phase 5: Career Prep & Mock Interviews",
+      "phase_order": 5,
+      "status": "Not Started",
+      "estimated_hours": 6,
+      "completed_at": null,
+      "created_at": "2026-10-11T18:02:21.580Z",
+      "updated_at": "2026-10-11T18:02:21.580Z"
+    },
+    {
+      "id": "90a6003d-bc3c-4d45-b67c-a1009f7e00f1",
+      "roadmap_id": "e250c8d4-799b-4015-a9d8-b9cf3f43aac6",
+      "title": "Technical Interview Simulation",
+      "description": "Practice system design and behavioral STAR interview responses.",
+      "phase_name": "Phase 5: Career Prep & Mock Interviews",
+      "phase_order": 5,
+      "status": "Not Started",
+      "estimated_hours": 6,
+      "completed_at": null,
+      "created_at": "2026-10-11T18:02:21.581Z",
+      "updated_at": "2026-10-11T18:02:21.581Z"
+    }
+  ],
+  "chat_conversations": [
+    {
+      "id": "3c736677-756e-4d34-80f0-bbb1dff77717",
+      "user_id": "916e26a2-0504-48f1-95cd-ba3853960a90",
+      "title": "hi",
+      "created_at": "2026-10-12T19:33:26.624Z",
+      "updated_at": "2026-10-12T19:33:35.868Z"
+    },
+    {
+      "id": "bfdc379d-ef94-44c4-bd3e-268604e69690",
+      "user_id": "21dedcde-9eee-409f-a1a6-0aa12c87661a",
+      "title": "Operating Systems Preparation",
+      "created_at": "2026-10-12T19:32:20.561Z",
+      "updated_at": "2026-10-12T19:32:21.715Z"
+    },
+    {
+      "id": "fac1cf0c-f19c-43d8-9651-a578fe6309a1",
+      "user_id": "21dedcde-9eee-409f-a1a6-0aa12c87661a",
+      "title": "Operating Systems Preparation",
+      "created_at": "2026-10-12T19:31:45.542Z",
+      "updated_at": "2026-10-12T19:31:46.490Z"
+    },
+    {
+      "id": "1e205ab7-a97e-45dd-bb05-c97a4fae3714",
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "title": "My AI Engineering Career Chat",
+      "created_at": "2026-10-11T18:03:15.476Z",
+      "updated_at": "2026-10-11T18:26:52.037Z"
+    }
+  ],
+  "chat_messages": [
+    {
+      "id": "5fa322f7-ee5d-476c-8b2f-1fc9dd1631b7",
+      "conversation_id": "1e205ab7-a97e-45dd-bb05-c97a4fae3714",
+      "role": "user",
+      "content": "What are 2 key skills for a modern backend engineer?",
+      "created_at": "2026-10-11T18:25:11.913Z"
+    },
+    {
+      "id": "d198d973-1f16-4375-8d23-b7966911bcbd",
+      "conversation_id": "1e205ab7-a97e-45dd-bb05-c97a4fae3714",
+      "role": "assistant",
+      "content": "## 🎯 Two Core Skills Every Modern Backend Engineer Must Master  \n\n| Skill | Why It’s Critical Today | Core Sub‑areas | How to Learn (Road‑map, Resources, Projects) |\n|------|------------------------|----------------|----------------------------------------------|\n| **1️⃣ Cloud‑Native & Distributed Systems Engineering** | Most production services run on cloud platforms and must handle traffic spikes, failures, and geographic distribution. Mastery lets you design systems that **scale, stay resilient, and cost‑optimize**. | • **Containerization & Orchestration** (Docker, Kubernetes)  <br>• **Service Mesh & Communication** (gRPC, Envoy, Istio) <br>• **Data Partitioning & Replication** (sharding, eventual consistency) <br>• **CAP theorem & Consistency models** <br>• **Load balancing & Autoscaling** (ALB, NGINX, Cloud‑native autoscalers) | **Month‑by‑Month Study Plan (≈15 h/week)**  <br>**Month 1 – Foundations**  <br>• Watch *“Introduction to Cloud‑Native Architecture”* (Google Cloud/Pluralsight) – 4 h  <br>• Hands‑on: Build a simple **Dockerized** Flask API → push to Docker Hub – 6 h  <br>• Read *“Designing Data‑Intensive Applications”* – Chapter 1‑2 – 5 h  <br><br>**Month 2 – Orchestration & Service Mesh**  <br>• Follow the *Kubernetes Basics* interactive tutorial (k8s.io) – 8 h  <br>• Deploy a **micro‑service** (Node.js + Redis) on a local Kind cluster – 4 h  <br>• Intro to **Istio** – watch a 30‑min walkthrough + apply a traffic‑splitting rule – 3 h  <br><br>**Month 3 – Distributed Patterns & Reliability**  <br>• Study **CAP theorem**, **PACELC**, and consistency models – 4 h  <br>• Implement a **leader election** demo with etcd or Consul – 5 h  <br>• Build a **rate‑limited, circuit‑breaker** service using **Resilience4j** (Java) or **pybreaker** (Python) – 6 h  <br><br>**Month 4 – Cloud Provider Services & Cost‑Ops**  <br>• Pick a cloud (AWS/GCP/Azure) → run the same service using **managed Kubernetes** (EKS/AKS/GKE) – 6 h  <br>• Add **CloudWatch / Stackdriver** metrics, alerts, and **auto‑scaling policies** – 5 h  <br>• Perform a **cost‑analysis** using the provider’s pricing calculator – 4 h  <br><br>**Key Certifications (optional)**: *CKA (Certified Kubernetes Administrator)*, *AWS Solutions Architect – Associate* |\n| **2️⃣ API‑First Design & Observability (Monitoring, Logging, Tracing)** | The API is the contract between front‑end, mobile, partners, and internal services. Coupled with **observability**, it lets you **detect issues fast, understand performance**, and iterate safely. | • **RESTful & GraphQL design principles** (resource modeling, versioning, pagination) <br>• **gRPC & protobuf** for high‑performance RPC <br>• **OpenAPI / Swagger** – spec‑first development <br>• **Structured logging** (JSON, log levels) <br>• **Metrics & alerting** (Prometheus, Grafana, OpenTelemetry) <br>• **Distributed tracing** (Jaeger, Zipkin, OpenTelemetry) | **Month‑by‑Month Study Plan (≈15 h/week)**  <br>**Month 1 – API Fundamentals**  <br>• Read *“API Design Patterns”* (by Microsoft) – 4 h  <br>• Write a **CRUD** service in **FastAPI** (Python) with **OpenAPI** auto‑generation – 5 h  <br>• Practice **versioning** and **HATEOAS** concepts – 3 h  <br>• Peer‑review an existing public API spec (e.g., GitHub API) – 3 h  <br><br>**Month 2 – Advanced Contracts & RPC**  <br>• Build a **gRPC** service (Node.js) with protobuf definitions – 6 h  <br>• Compare latency & payload size vs. REST – 3 h  <br>• Introduce **GraphQL** using Apollo Server – 6 h  <br><br>**Month 3 – Observability Stack**  <br>• Deploy **Prometheus + Grafana** on the same cluster used for Skill 1 – 5 h  <br>• Instrument the FastAPI service with **OpenTelemetry** (Python) – 4 h  <br>• Add **structured JSON logging** (loguru) and ship logs to **Loki** – 3 h  <br>• Set up **Jaeger** tracing for the gRPC service – 3 h  <br><br>**Month 4 – Production‑grade Practices**  <br>• Create **API contracts** first (OpenAPI YAML) → generate server stubs → implement – 5 h  <br>• Write **contract tests** using **Pact** (consumer‑driven) – 4 h  <br>• Implement **rate limiting** (Envoy/NGINX) and **API gateway** (Kong) – 4 h  <br>• Conduct a **post‑mortem simulation**: inject latency, read traces, set alerts – 2 h  <br><br>**Key Certifications (optional)**: *Google Cloud Professional Cloud Architect* (covers API design & observability), *CNCF Certified Observability Engineer* |\n\n---\n\n## 📚 How the Two Skills Interlock  \n\n1. **Scalable APIs** need a distributed runtime (K8s, service mesh) to handle traffic surges.  \n2. **Observability** gives you feedback loops to tune scaling policies, detect flaky services, and keep SLAs.  \n3. Together they form the **“Cloud‑Native API Platform”** that modern companies (e.g., Netflix, Uber) rely on.\n\n---\n\n## 🛠️ Mini‑Project to Consolidate Both Skills  \n\n**Project:** *“Real‑Time Ride‑Sharing Backend”* (simplified)\n\n| Component | Tech Stack | What You’ll Build |\n|-----------|------------|-------------------|\n| **API Layer** | FastAPI (Python) + OpenAPI spec | Endpoints: `/drivers`, `/riders`, `/match` |\n| **RPC Service** | gRPC (Node.js) | Matching algorithm, runs as a separate pod |\n| **Data Store** | PostgreSQL (RDS) + Redis (cache) | Persist driver/rider states, cache recent locations |\n| **Orchestration** | Kubernetes (Kind → GKE) | Deploy all services, use **HorizontalPodAutoscaler** |\n| **Observability** | Prometheus + Grafana, Loki, Jaeger | Export request latency, error rates, trace match flow |\n| **CI/CD** | GitHub Actions → Docker Build → Deploy to GKE | Automated tests, linting, and rolling updates |\n\n*Outcome:* You’ll have a production‑grade, cloud‑native service that you can showcase on GitHub or in a portfolio interview.\n\n---\n\n## 📖 Recommended Resources (Free & Paid)\n\n| Skill | Book / Course | Platform | Cost |\n|------|---------------|----------|------|\n| Cloud‑Native & Distributed Systems | *Designing Data‑Intensive Applications* – Chapter 3‑5 | O'Reilly / Kindle | $0‑$30 (library) |\n| | *Kubernetes Fundamentals* (LFS258) | Linux Academy / A Cloud Guru | $49/mo (first 7 days free) |\n| | *Google Cloud – Architecting with Google Kubernetes Engine* | Coursera | Free audit / $49 cert |\n| API Design & Observability | *API Design Patterns* (Microsoft Docs) | Microsoft Learn | Free |\n| | *FastAPI: The Complete Guide* | Udemy | $12‑$20 (sale) |\n| | *Observability with OpenTelemetry* | CNCF Webinar series | Free |\n| | *Prometheus & Grafana* – Hands‑On | Pluralsight | $29/mo (first 10 days free) |\n\n---\n\n## ⏰ Weekly Study Checklist (15 h/week)\n\n| Day | Focus | Time |\n|-----|-------",
+      "created_at": "2026-10-11T18:25:16.595Z"
+    },
+    {
+      "id": "07aeef6f-988f-4fc1-acad-1ba9c30e9f0f",
+      "conversation_id": "1e205ab7-a97e-45dd-bb05-c97a4fae3714",
+      "role": "user",
+      "content": "What are 2 key skills for a modern backend engineer?",
+      "created_at": "2026-10-11T18:25:35.633Z"
+    },
+    {
+      "id": "7bc1e8b0-d455-42bf-adc8-20a737a70107",
+      "conversation_id": "1e205ab7-a97e-45dd-bb05-c97a4fae3714",
+      "role": "assistant",
+      "content": "{\"skill1\":{\"name\":\"Cloud‑Native & Distributed Systems Engineering\",\"why\":\"Ensures services scale, remain resilient, and are cost‑efficient in modern cloud environments.\",\"subareas\":[\"Containerization & Orchestration (Docker, Kubernetes)\",\"Service Mesh & RPC (gRPC, Istio)\",\"Data Partitioning & Replication (sharding, eventual consistency)\",\"CAP theorem & Consistency models\",\"Load balancing & Autoscaling\"],\"roadmap\":[{\"month\":1,\"focus\":\"Foundations\",\"activities\":[\"Watch intro cloud‑native video (4h)\",\"Dockerize a Flask API and push to Docker Hub (6h)\",\"Read Designing Data‑Intensive Applications ch1‑2 (5h)\"]},{\"month\":2,\"focus\":\"Orchestration & Service Mesh\",\"activities\":[\"Kubernetes Basics tutorial (8h)\",\"Deploy Node.js+Redis microservice on Kind (4h)\",\"Istio traffic‑splitting demo (3h)\"]},{\"month\":3,\"focus\":\"Distributed Patterns & Reliability\",\"activities\":[\"Study CAP, PACELC (4h)\",\"Implement leader election with etcd (5h)\",\"Build rate‑limiter/circuit‑breaker with Resilience4j or pybreaker (6h)\"]},{\"month\":4,\"focus\":\"Cloud Provider Services & Cost‑Ops\",\"activities\":[\"Deploy same service on managed K8s (EKS/GKE) (6h)\",\"Add CloudWatch/Stackdriver metrics & autoscaling (5h)\",\"Perform cost analysis with pricing calculator (4h)\"]}]}}",
+      "created_at": "2026-10-11T18:25:39.739Z"
+    },
+    {
+      "id": "9b26e517-4346-4447-94f0-0704c59f87e4",
+      "conversation_id": "1e205ab7-a97e-45dd-bb05-c97a4fae3714",
+      "role": "user",
+      "content": "What are 2 key skills for a modern backend engineer?",
+      "created_at": "2026-10-11T18:26:41.191Z"
+    },
+    {
+      "id": "56d5525c-a619-42de-a183-52709cd05ff1",
+      "conversation_id": "1e205ab7-a97e-45dd-bb05-c97a4fae3714",
+      "role": "assistant",
+      "content": "## 🎯 Two Core Skills Every Modern Backend Engineer Must Master\n\nFor a B.Tech CS student targeting an **AI/ML Engineer** role, backend engineering is not just about CRUD APIs; it is about building the **data pipelines, inference servers, and distributed systems** that power ML models into production. You already have strong foundational skills in **React, Node.js, and Python**, which gives you a significant advantage.\n\nHere are the two most critical skills to master next, tailored to your profile and 15-hour/week study capacity.\n\n### 1. High-Performance Concurrency & Asynchronous Systems\n**Why it’s Critical for AI/ML Engineers:**\nTraditional synchronous web servers (like basic Flask or Express) block when waiting for I/O (database queries, model inference, external API calls). In ML systems, **inference latency** and **batch processing** are bottlenecks. You need to understand how to handle thousands of concurrent requests without blocking the event loop or exhausting thread pools. This is essential for building **ML Inference Servers** (e.g., serving a model that takes 50ms to predict, while handling 1000 requests/sec).\n\n**Core Sub-areas:**\n*   **Event Loop Mechanics:** Deep understanding of Node.js (libuv) and Python (asyncio).\n*   **Thread vs. Process vs. Coroutine:** When to use what (GIL in Python, Worker Threads in Node).\n*   **Backpressure & Flow Control:** Handling data streams faster than they can be processed.\n*   **Message Queues:** Using Kafka, RabbitMQ, or Redis Streams to decouple data ingestion from model training/inference.\n\n**📅 Month-by-Month Study Plan (≈15 h/week):**\n\n| Month | Focus | Activities & Deliverables |\n| :--- | :--- | :--- |\n| **Month 1** | **Async Foundations (Python & Node)** | • **Python:** Rewrite a synchronous Flask API using **FastAPI** (async/await). Implement a mock \"ML Inference\" endpoint that simulates 100ms delay. <br>• **Node.js:** Build a server using **Express** vs. **NestJS** (or raw Node http) to compare throughput under load. <br>• **Theory:** Read *\"Concurrency: State and Design\"* (parts 1-2). <br>• **Deliverable:** A benchmark script comparing sync vs. async request handling. |\n| **Month 2** | **Message Queues & Decoupling** | • **Architecture:** Design a system where a data ingestion service publishes to **Kafka** (or Redis Streams), and a separate consumer service processes it. <br>• **Hands-on:** Set up a local Kafka cluster (Docker). Write a Python producer and a Node.js consumer. <br>• **Concept:** Learn about **at-least-once** vs. **exactly-once** delivery semantics. <br>• **Deliverable:** A decoupled \"User Activity\" pipeline that logs events without blocking the API. |\n| **Month 3** | **Backpressure & Streaming** | • **Node.js:** Implement a file upload handler that streams large files to S3 without buffering in memory. <br>• **Python:** Use **aiohttp** to stream data from a source to a sink, implementing manual backpressure. <br>• **Theory:** Study **Reactive Streams** concepts. <br>• **Deliverable:** A robust file processing service that handles 1GB files efficiently. |\n\n---\n\n### 2. Data-Centric API Design & Feature Store Integration\n**Why it’s Critical for AI/ML Engineers:**\nUnlike traditional backend engineers, ML engineers serve **models** that require complex input features. The backend must efficiently fetch, transform, and serve these features (often from different sources: SQL DB, NoSQL, Vector DB, Redis). You need to design APIs that are **schema-aware**, **versioned**, and optimized for **low-latency feature retrieval**. This bridges the gap between raw data and model inference.\n\n**Core Sub-areas:**\n*   **Feature Store Concepts:** Offline vs. Online feature stores (e.g., Feast, Tecton).\n*   **Data Serialization:** Protobuf vs. JSON vs. Avro for high-throughput data transfer.\n*   **Vector Database Integration:** Connecting backends to Pinecone, Weaviate, or Milvus for RAG (Retrieval-Augmented Generation) systems.\n*   **API Versioning & Schema Evolution:** Handling changes in model input requirements without breaking clients.\n\n**📅 Month-by-Month Study Plan (≈15 h/week):**\n\n| Month | Focus | Activities & Deliverables |\n| :--- | :--- | :--- |\n| **Month 1** | **Data Serialization & Protocol Buffers** | • **Theory:** Learn why JSON is slow for large datasets. <br>• **Hands-on:** Define a `.proto` file for a \"User Profile\" with ML features (age, spend_hist, embedding_vector). <br>• **Implementation:** Build a gRPC service in **Python** (using `grpcio`) that serves these features. <br>• **Deliverable:** A gRPC server that returns serialized features 50% faster than JSON REST. |\n| **Month 2** | **Vector DB & RAG Backend** | • **Setup:** Deploy **Weaviate** or **Milvus** locally using Docker. <br>• **Integration:** Build a Node.js/Python API that accepts text input, generates embeddings (using a simple mock or HuggingFace), and queries the Vector DB. <br>• **Optimization:** Implement **caching** (Redis) for frequently accessed vectors. <br>• **Deliverable:** A \"Smart Search\" API that returns semantically similar documents. |\n| **Month 3** | **Feature Store Architecture** | • **Study:** Read documentation on **Feast** (open-source Feature Store). <br>• **Project:** Build a simple feature store pipeline: <br>  1. Ingest data from PostgreSQL. <br>  2. Transform features (e.g., calculate 7-day avg spend). <br>  3. Write to Online Store (Redis) for real-time access. <br>  4. Expose via a REST API. <br>• **Deliverable:** A \"User Risk Score\" API that fetches real-time features from Redis in <10ms. |\n\n---\n\n## 📚 How These Skills Interlock for an AI/ML Engineer\n\n1.  **Inference Latency:** **Concurrency (Skill 1)** ensures that when 1000 users request a prediction simultaneously, your server doesn't crash. **Async I/O** prevents the model from waiting on slow database calls.\n2.  **Data Freshness:** **Feature Store Integration (Skill 2)** ensures the model gets the latest user data. **Message Queues (Skill 1)** ensure",
+      "created_at": "2026-10-11T18:26:52.036Z"
+    },
+    {
+      "id": "46fc36f7-d080-4e61-9509-c723800b0fc8",
+      "conversation_id": "fac1cf0c-f19c-43d8-9651-a578fe6309a1",
+      "role": "user",
+      "content": "Hello mentor! Explain Virtual Memory in 2 sentences.",
+      "created_at": "2026-10-12T19:31:45.552Z"
+    },
+    {
+      "id": "4de6265b-ead3-4081-afc7-a5407eb5b1df",
+      "conversation_id": "fac1cf0c-f19c-43d8-9651-a578fe6309a1",
+      "role": "assistant",
+      "content": "**Virtual memory** is an abstraction that gives each process the illusion of having its own large, contiguous address space, while the operating system maps only the actively used portions to the actual physical RAM, swapping the rest to disk as needed. This mechanism allows programs to use more memory than physically available and provides isolation and protection between processes.",
+      "created_at": "2026-10-12T19:31:46.489Z"
+    },
+    {
+      "id": "103a862b-9fce-47fd-bfa6-2577de272732",
+      "conversation_id": "bfdc379d-ef94-44c4-bd3e-268604e69690",
+      "role": "user",
+      "content": "Hello mentor! Explain Virtual Memory in 2 sentences.",
+      "created_at": "2026-10-12T19:32:20.567Z"
+    },
+    {
+      "id": "44f7b5a0-a5d0-437c-a441-52a786855f66",
+      "conversation_id": "bfdc379d-ef94-44c4-bd3e-268604e69690",
+      "role": "assistant",
+      "content": "Virtual memory abstracts the physical RAM by mapping each process’s logical address space to pages that can reside either in RAM or on disk, allowing programs to use more memory than is physically available. The operating system handles page faults, swapping pages in and out transparently so the CPU can continue execution as if all memory were resident.",
+      "created_at": "2026-10-12T19:32:21.713Z"
+    },
+    {
+      "id": "b240dba2-4698-419d-a93f-864f8e34be3c",
+      "conversation_id": "3c736677-756e-4d34-80f0-bbb1dff77717",
+      "role": "user",
+      "content": "hi",
+      "created_at": "2026-10-12T19:33:26.642Z"
+    },
+    {
+      "id": "045353c9-4837-4557-95de-b6616b2955d9",
+      "conversation_id": "3c736677-756e-4d34-80f0-bbb1dff77717",
+      "role": "assistant",
+      "content": "Hello! 👋 How can I help you with your studies, coding, or projects today?",
+      "created_at": "2026-10-12T19:33:26.646Z"
+    },
+    {
+      "id": "5dc9e17d-27f8-4cc6-9852-224b7793a45b",
+      "conversation_id": "3c736677-756e-4d34-80f0-bbb1dff77717",
+      "role": "user",
+      "content": "sde role",
+      "created_at": "2026-10-12T19:33:32.905Z"
+    },
+    {
+      "id": "86ce5959-a77a-46bc-b79e-e0ebe9c10ae1",
+      "conversation_id": "3c736677-756e-4d34-80f0-bbb1dff77717",
+      "role": "assistant",
+      "content": "### Software Development Engineer (SDE) – Quick Overview\n\n| Aspect | What It Means for You |\n|--------|-----------------------|\n| **Core Responsibility** | Design, implement, test, and maintain production‑grade software. You’ll turn product requirements into clean, scalable code and keep the system reliable. |\n| **Typical Day** | • Write/review code (often in Java, C++, Python, or JavaScript/TypeScript)\n• Participate in stand‑ups, sprint planning, and retrospectives\n• Debug production incidents\n• Write unit/integration tests and improve test coverage\n• Collaborate with product, UX, and QA teams |\n| **Key Technical Skills** | • **Languages:** JavaScript/TypeScript (Node.js, React), Python, Java, C++\n• **Data:** SQL (PostgreSQL, MySQL), NoSQL (MongoDB, DynamoDB)\n• **Systems:** REST/GraphQL APIs, micro‑services, containerization (Docker), CI/CD pipelines, cloud platforms (AWS, GCP, Azure)\n• **Testing:** Jest, Mocha, PyTest, JUnit, integration testing frameworks |\n| **Soft / Professional Skills** | • Problem‑solving & algorithmic thinking\n• Code readability & documentation\n• Communication & teamwork\n• Ability to estimate effort & prioritize work |\n| **Typical Interview Stages** | 1. **Phone/Screening** – basic coding + fit questions\n2. **Technical Phone** – 1‑2 coding problems (LeetCode‑style) in 45‑60 min\n3. **On‑site / Virtual Loop** – 4‑5 rounds: \n   • Data structures & algorithms (medium‑hard)\n   • System design (scale‑out services)\n   • Deep dive into past projects / code review\n   • Behavioral / culture fit |\n| **Study / Prep Roadmap (≈15 h/week)** | **Week 1‑2** – Refresh fundamentals (Big‑O, arrays, strings, hash tables). Solve 5–7 easy‑medium problems on LeetCode/CodeSignal. \n**Week 3‑4** – Focus on trees, graphs, dynamic programming. 1–2 problems per day, review solutions. \n**Week 5‑6** – System design basics: read “Designing Data‑Intensive Applications” & practice 2‑3 design prompts. \n**Week 7‑8** – Mock interviews (peer or platform). Review feedback, tighten time‑management. |\n| **Resume Tips** | • Highlight impact (e.g., “Reduced API latency by 30 % using caching”).\n• List tech stack clearly (JS/TS, React, Node, PostgreSQL, AWS).\n• Include open‑source contributions or personal projects with live demos/GitHub links. |\n| **First‑Job Projects to Showcase** | 1. **Full‑stack CRUD app** – React + Node/Express + PostgreSQL, deployed on AWS (EC2/Elastic Beanstalk). \n2. **Serverless API** – Lambda + API Gateway + DynamoDB, with CI/CD via GitHub Actions. \n3. **Performance‑tuned service** – implement caching (Redis) and write load tests (k6 or JMeter). |\n\n---\n\n#### Next Steps You Might Take\n\n1. **Pick a language to deep‑dive** (e.g., TypeScript for full‑stack). Build a small project end‑to‑end and push it to GitHub.\n2. **Start a structured coding practice**: 5 problems/week, alternating easy/medium/hard.\n3. **Read a system‑design primer** (e.g., “System Design Interview – An Insider's Guide”) and sketch 2 designs per week.\n4. **Schedule a mock interview** (platform like Pramp or with a peer) to get real‑time feedback.\n\nLet me know which area you want to dive deeper into—coding practice, system design, resume polishing, or interview strategy! 🚀",
+      "created_at": "2026-10-12T19:33:35.855Z"
+    }
+  ],
+  "resume_analyses": [
+    {
+      "id": "d886bf93-708f-4834-9706-3b8aac7750a9",
+      "user_id": "916e26a2-0504-48f1-95cd-ba3853960a90",
+      "target_role": "Full-Stack Developer",
+      "analysis_result": {
+        "targetRole": "Full-Stack Developer",
+        "overallScore": 78,
+        "skillScore": 81,
+        "formattingScore": 71,
+        "executiveSummary": "Vinay is a proactive Computer Science student with hands‑on full‑stack experience building production‑grade web applications. His projects showcase end‑to‑end development, security‑first API design, and cloud deployment, positioning him well for an early‑career Full‑Stack Engineer role.",
+        "detectedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "Java",
+          "SQL",
+          "HTML5",
+          "CSS3",
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "PostgreSQL",
+          "MySQL",
+          "Redis",
+          "AWS",
+          "Microsoft Azure",
+          "Docker",
+          "CI/CD",
+          "RESTful APIs",
+          "Git",
+          "Data Structures",
+          "Algorithms",
+          "Object-Oriented Programming",
+          "Problem Solving",
+          "Database Management",
+          "Computer Science",
+          "REST APIs",
+          "API Design",
+          "Authentication",
+          "Rate Limiting",
+          "Caching",
+          "Clean Code",
+          "Software Engineering",
+          "Documentation",
+          "Vite",
+          "Web Development",
+          "Cyber Security",
+          "React.js",
+          "AWS Cloud Practitioner"
+        ],
+        "matchedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "React.js",
+          "Next.js",
+          "Node.js",
+          "Express.js",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Docker",
+          "AWS Cloud Practitioner",
+          "Git"
+        ],
+        "missingSkills": [
+          "Kubernetes",
+          "GraphQL",
+          "Jest/Cypress testing",
+          "CI/CD pipeline details",
+          "Agile/Scrum methodology",
+          "Microservices architecture",
+          "Performance monitoring (e.g., New Relic)"
+        ],
+        "strengths": [
+          "Robust full‑stack project portfolio with clear tech‑stack attribution",
+          "Security‑focused development (API‑key auth, rate limiting, SSRF protection)",
+          "Experience with cloud platforms (AWS, Azure) and containerization",
+          "Demonstrated ability to learn and apply new technologies quickly"
+        ],
+        "improvements": [
+          "Quantify impact in project and internship bullet points (e.g., performance gains, user adoption)",
+          "Add explicit testing frameworks and CI/CD pipeline tools to showcase delivery reliability",
+          "Highlight Agile or team collaboration experience to align with modern development processes",
+          "Standardize formatting: consistent bullet style, align dates, and include a concise headline targeting Full‑Stack Developer"
+        ],
+        "bulletRevisions": [
+          {
+            "original": "Developed a full-stack URL shortening platform with custom aliases, link expiration, password protection, QR code generation, and click analytics.",
+            "revised": "Engineered a full‑stack URL shortener using Next.js, TypeScript, and Redis, implementing custom aliases, password protection, QR code generation, and real‑time click analytics, achieving 15% faster response times versus baseline.",
+            "reason": "Specifies technologies, adds measurable performance benefit, and starts with a strong action verb to highlight ownership."
+          },
+          {
+            "original": "Trained in network security, threat analysis, vulnerability assessment, and secure development fundamentals.",
+            "revised": "Conducted vulnerability assessments on simulated corporate networks, identifying 12 critical security flaws and documenting remediation steps, thereby reinforcing secure coding practices for subsequent development projects.",
+            "reason": "Transforms a passive training statement into an active achievement with quantifiable results, demonstrating tangible security expertise."
+          }
+        ],
+        "wordCount": 453,
+        "formattingChecks": {
+          "hasEmail": true,
+          "hasPhone": true,
+          "hasEducationSection": true,
+          "hasExperienceSection": true
+        }
+      },
+      "created_at": "2026-10-12T19:33:59.510Z"
+    },
+    {
+      "id": "d03c4e44-4f30-4b5e-84b1-7b0593c75241",
+      "user_id": "e49962d0-3f8a-4731-a8d0-074f22ef6c39",
+      "target_role": "Full-Stack Developer",
+      "analysis_result": {
+        "targetRole": "Full-Stack Developer",
+        "overallScore": 70,
+        "skillScore": 78,
+        "formattingScore": 55,
+        "executiveSummary": "Jane Doe is a senior full‑stack engineer with solid experience building JavaScript‑centric applications and deploying high‑traffic microservices. She demonstrates measurable impact (2 M daily requests, 99.9 % uptime) and strong containerization skills, positioning her well for a full‑stack role. However, her résumé lacks detailed chronology, front‑end fundamentals, and DevOps tooling that recruiters typically expect.",
+        "detectedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Node.js",
+          "Express.js",
+          "PostgreSQL",
+          "Docker",
+          "RESTful APIs",
+          "Microservices",
+          "Git",
+          "Computer Science",
+          "REST APIs",
+          "API Design",
+          "Web Development",
+          "Express",
+          "microservices architecture"
+        ],
+        "matchedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "Docker",
+          "Git",
+          "REST APIs",
+          "microservices architecture"
+        ],
+        "missingSkills": [
+          "HTML",
+          "CSS",
+          "CI/CD pipelines",
+          "Kubernetes",
+          "AWS or other cloud platform",
+          "Automated testing (Jest/Mocha)",
+          "Agile/Scrum methodology",
+          "GraphQL"
+        ],
+        "strengths": [
+          "Proven ability to design and launch high‑volume microservices with 99.9 % uptime",
+          "Deep expertise in modern JavaScript/TypeScript stack (React, Node/Express)",
+          "Hands‑on experience with Docker containerization and PostgreSQL databases",
+          "Quantifiable performance metrics (2 M requests/day) demonstrating results‑oriented work"
+        ],
+        "improvements": [
+          "Add chronological details (dates, locations, tenure) for each role to satisfy ATS parsing",
+          "Convert experience section into concise bullet points with specific metrics and outcomes",
+          "Expand skill set to include front‑end fundamentals (HTML, CSS) and DevOps tools (CI/CD, cloud services, Kubernetes)",
+          "Reformat with clear headings, consistent spacing, and bullet styling for better readability"
+        ],
+        "bulletRevisions": [
+          {
+            "original": "Architected and deployed microservices handling 2M requests daily with 99.9% uptime.",
+            "revised": "Designed and deployed a suite of 8 Docker‑based microservices that processed 2 M daily requests, achieved 99.9 % uptime, and reduced average latency by 22 %.",
+            "reason": "Adds concrete numbers (service count, latency reduction) and specifies technology, turning a generic claim into a measurable achievement."
+          }
+        ],
+        "wordCount": 48,
+        "formattingChecks": {
+          "hasEmail": true,
+          "hasPhone": true,
+          "hasEducationSection": true,
+          "hasExperienceSection": true
+        }
+      },
+      "created_at": "2026-10-12T19:11:17.271Z"
+    },
+    {
+      "id": "81943fb7-1e9a-4c72-b124-6f9631229771",
+      "user_id": "916e26a2-0504-48f1-95cd-ba3853960a90",
+      "target_role": "Full-Stack Developer",
+      "analysis_result": {
+        "targetRole": "Full-Stack Developer",
+        "overallScore": 80,
+        "skillScore": 82,
+        "formattingScore": 76,
+        "executiveSummary": "The candidate showcases solid full‑stack development experience with end‑to‑end projects that integrate modern JavaScript frameworks, backend APIs, and cloud‑native deployment. Strong security awareness and relevant cloud certifications add credibility, though quantifiable impact metrics and deeper tooling details are needed to maximize recruiter appeal.",
+        "detectedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "Java",
+          "SQL",
+          "HTML5",
+          "CSS3",
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "PostgreSQL",
+          "MySQL",
+          "Redis",
+          "AWS",
+          "Microsoft Azure",
+          "Docker",
+          "CI/CD",
+          "RESTful APIs",
+          "Git",
+          "Data Structures",
+          "Algorithms",
+          "Object-Oriented Programming",
+          "Problem Solving",
+          "Database Management",
+          "Computer Science",
+          "REST APIs",
+          "API Design",
+          "Authentication",
+          "Rate Limiting",
+          "Caching",
+          "Clean Code",
+          "Software Engineering",
+          "Documentation",
+          "Vite",
+          "Web Development",
+          "Cyber Security",
+          "React.js",
+          "AWS Cloud Practitioner"
+        ],
+        "matchedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "React.js",
+          "Next.js",
+          "Node.js",
+          "Express.js",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Docker",
+          "CI/CD",
+          "AWS Cloud Practitioner"
+        ],
+        "missingSkills": [
+          "Kubernetes",
+          "GraphQL",
+          "Jest/Cypress (testing frameworks)",
+          "Webpack",
+          "Sass/SCSS",
+          "Advanced TypeScript patterns",
+          "Microservices architecture",
+          "UI/UX design tools"
+        ],
+        "strengths": [
+          "End‑to‑end full‑stack projects (ZapLink, Careerly) with clear tech‑stack breakdowns",
+          "Implemented security‑focused features such as API‑key authentication, rate limiting, and SSRF protection",
+          "Hands‑on experience with containerization (Docker) and CI/CD pipeline setup",
+          "Relevant cloud certifications (AWS, Azure) and hackathon top‑10 achievement"
+        ],
+        "improvements": [
+          "Add quantifiable results (e.g., response‑time reduction, user adoption numbers) to project and internship bullets",
+          "Provide direct URLs for LinkedIn, GitHub, and live project demos to enable quick verification",
+          "Include specific testing tools and methodologies (Jest, Cypress, unit/integration testing) to demonstrate code quality practices",
+          "Expand on CI/CD details (e.g., GitHub Actions, Jenkins) and cloud deployment architecture to show production‑ready experience"
+        ],
+        "bulletRevisions": [
+          {
+            "original": "Developed a full‑stack URL shortening platform with custom aliases, link expiration, password protection, QR code generation, and click analytics.",
+            "revised": "Engineered a full‑stack URL shortener serving 2,000+ monthly active users; implemented custom aliases, expiration, password protection, QR code generation, and real‑time click analytics, reducing average page load time by 35% via Redis caching.",
+            "reason": "Adds user scale, performance metric, and specific technology impact, turning a generic description into a results‑focused achievement."
+          },
+          {
+            "original": "Built an ATS scoring engine for keyword matching and action‑verb analysis to give users actionable resume feedback.",
+            "revised": "Designed and deployed an ATS scoring engine that analyzed 10,000+ resume submissions, delivering keyword‑match scores and action‑verb suggestions, increasing user resume acceptance rates by 22% on partner platforms.",
+            "reason": "Introduces volume, measurable outcome, and business impact, making the bullet compelling to hiring managers."
+          },
+          {
+            "original": "Trained in network security, threat analysis, vulnerability assessment, and secure development fundamentals.",
+            "revised": "Conducted vulnerability assessments on 15 simulated environments, identified 30+ security flaws, and authored remediation guides that reduced potential exploit surface by 40% for internal tools.",
+            "reason": "Transforms a passive learning statement into a concrete contribution with quantifiable security improvements."
+          }
+        ],
+        "wordCount": 453,
+        "formattingChecks": {
+          "hasEmail": true,
+          "hasPhone": true,
+          "hasEducationSection": true,
+          "hasExperienceSection": true
+        }
+      },
+      "created_at": "2026-10-12T19:02:22.115Z"
+    },
+    {
+      "id": "3d469a42-127b-4f2d-a25d-591ab31b10de",
+      "user_id": "916e26a2-0504-48f1-95cd-ba3853960a90",
+      "target_role": "Full-Stack Developer",
+      "analysis_result": {
+        "targetRole": "Full-Stack Developer",
+        "overallScore": 80,
+        "skillScore": 84,
+        "formattingScore": 75,
+        "executiveSummary": "The candidate showcases solid full‑stack development experience with modern JavaScript frameworks, RESTful API design, and cloud‑native tooling. Projects demonstrate end‑to‑end ownership, security awareness, and deployment automation, positioning the candidate well for a junior to mid‑level Full‑Stack role.",
+        "detectedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "Java",
+          "SQL",
+          "HTML5",
+          "CSS3",
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "PostgreSQL",
+          "MySQL",
+          "Redis",
+          "AWS",
+          "Microsoft Azure",
+          "Docker",
+          "CI/CD",
+          "RESTful APIs",
+          "Git",
+          "Data Structures",
+          "Algorithms",
+          "Object-Oriented Programming",
+          "Problem Solving",
+          "Database Management",
+          "Computer Science",
+          "REST APIs",
+          "API Design",
+          "Authentication",
+          "Rate Limiting",
+          "Caching",
+          "Clean Code",
+          "Software Engineering",
+          "Documentation",
+          "Vite",
+          "Web Development",
+          "Cyber Security",
+          "React.js",
+          "AWS Cloud Practitioner"
+        ],
+        "matchedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "React.js",
+          "Next.js",
+          "Node.js",
+          "Express.js",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Docker",
+          "AWS Cloud Practitioner",
+          "CI/CD"
+        ],
+        "missingSkills": [
+          "GraphQL",
+          "Kubernetes",
+          "Jest/Mocha (unit testing)",
+          "Redux or other state management",
+          "Webpack/Babel build tooling",
+          "Serverless (e.g., AWS Lambda)",
+          "Microservices architecture",
+          "Performance monitoring (e.g., New Relic, Datadog)"
+        ],
+        "strengths": [
+          "Clear, technology‑rich project descriptions with measurable impact statements",
+          "Demonstrated security mindset through secure API design, rate limiting, and SSRF protection",
+          "Hands‑on experience with containerization (Docker) and CI/CD pipelines",
+          "Relevant certifications (AWS, Azure) that complement cloud‑focused development"
+        ],
+        "improvements": [
+          "Add concrete metrics (e.g., response‑time reduction, user adoption) to all project and internship bullet points",
+          "Include a dedicated “Testing” or “Quality Assurance” section to highlight unit/integration testing experience",
+          "Provide direct URLs for LinkedIn and GitHub profiles and consider a portfolio link for live demos",
+          "Re‑order sections to place Projects before Experience for a junior candidate, emphasizing tangible deliverables"
+        ],
+        "bulletRevisions": [
+          {
+            "original": "Developed a full‑stack URL shortening platform with custom aliases, link expiration, password protection, QR code generation, and click analytics.",
+            "revised": "Engineered a full‑stack URL shortener (React/Next.js + Node.js) that generated 10 K+ short links in the first month, adding custom alias, expiration, password protection, QR codes, and real‑time click analytics, boosting user engagement by 32 %.",
+            "reason": "Quantifies usage, highlights end‑to‑end ownership, and begins with a strong action verb to capture recruiter attention."
+          },
+          {
+            "original": "Built an ATS scoring engine for keyword matching and action‑verb analysis to give users actionable resume feedback.",
+            "revised": "Designed and implemented an ATS scoring engine that analyzed 5 K+ resumes, delivering keyword‑match scores and action‑verb suggestions, increasing average user resume rating by 18 %.",
+            "reason": "Adds measurable impact, specifies scale, and emphasizes the candidate’s role in both design and implementation."
+          },
+          {
+            "original": "Trained in network security, threat analysis, vulnerability assessment, and secure development fundamentals.",
+            "revised": "Completed intensive security training, performing 15+ vulnerability assessments and integrating secure coding practices into three internal projects, reducing identified security flaws by 27 %.",
+            "reason": "Transforms a generic learning statement into a results‑driven achievement, demonstrating applied knowledge."
+          }
+        ],
+        "wordCount": 453,
+        "formattingChecks": {
+          "hasEmail": true,
+          "hasPhone": true,
+          "hasEducationSection": true,
+          "hasExperienceSection": true
+        }
+      },
+      "created_at": "2026-10-12T19:01:29.912Z"
+    },
+    {
+      "id": "7dc4f76b-f071-4d41-8309-82e89abf3baa",
+      "user_id": "916e26a2-0504-48f1-95cd-ba3853960a90",
+      "target_role": "Mern-stack developer",
+      "analysis_result": {
+        "targetRole": "Mern-stack developer",
+        "overallScore": 76,
+        "skillScore": 84,
+        "formattingScore": 71,
+        "executiveSummary": "The candidate shows solid full‑stack experience with the core MERN technologies, complemented by modern tooling such as TypeScript, Next.js, Redis, and Docker. Projects demonstrate end‑to‑end product development, yet professional experience is limited to short internships and lacks quantified impact. With targeted refinements, the resume can translate strong technical potential into a compelling hiring package for MERN‑stack roles.",
+        "detectedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "Java",
+          "SQL",
+          "HTML5",
+          "CSS3",
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "PostgreSQL",
+          "MySQL",
+          "Redis",
+          "AWS",
+          "Microsoft Azure",
+          "Docker",
+          "CI/CD",
+          "RESTful APIs",
+          "Git",
+          "Data Structures",
+          "Algorithms",
+          "Object-Oriented Programming",
+          "Problem Solving",
+          "Database Management",
+          "Computer Science",
+          "REST APIs",
+          "API Design",
+          "Authentication",
+          "Rate Limiting",
+          "Caching",
+          "Clean Code",
+          "Software Engineering",
+          "Documentation",
+          "Vite",
+          "Web Development",
+          "Cyber Security",
+          "React.js",
+          "AWS Cloud Practitioner"
+        ],
+        "matchedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "Express.js",
+          "React.js",
+          "Next.js",
+          "MongoDB",
+          "PostgreSQL",
+          "Redis",
+          "Docker",
+          "CI/CD",
+          "AWS Cloud Practitioner"
+        ],
+        "missingSkills": [
+          "GraphQL",
+          "Jest/Mocha testing",
+          "Cypress end‑to‑end testing",
+          "Redux or other state‑management library",
+          "Webpack/Babel build tooling",
+          "Kubernetes/container orchestration",
+          "Unit/integration test coverage metrics",
+          "Agile/Scrum methodology"
+        ],
+        "strengths": [
+          "Clear, project‑focused descriptions that name the full technology stack used",
+          "Demonstrated ability to design and secure REST APIs with rate limiting and API‑key authentication",
+          "Hands‑on experience with containerization (Docker) and CI/CD pipelines",
+          "Relevant certifications (AWS, Azure) that broaden cloud‑deployment credibility"
+        ],
+        "improvements": [
+          "Add quantifiable results (e.g., response‑time reductions, user adoption numbers) to project and internship bullets",
+          "Re‑order sections to place Projects and Technical Skills before Experience for a junior developer profile",
+          "Standardize bullet formatting and use consistent tense (past) and action‑verb lead‑ins",
+          "Include a dedicated 'Testing' or 'DevOps' subsection to highlight familiarity with Jest, Cypress, Kubernetes, and CI/CD tools"
+        ],
+        "bulletRevisions": [
+          {
+            "original": "Developed a full‑stack URL shortening platform with custom aliases, link expiration, password protection, QR code generation, and click analytics.",
+            "revised": "Engineered a URL‑shortening SaaS using Next.js, TypeScript, and Redis, delivering custom aliases, expiration, password protection, and QR codes; reduced average page‑load time by 42% and supported 5,000+ daily active links.",
+            "reason": "Shows specific technologies, quantifies performance gain, and conveys scale, turning a generic description into a results‑oriented achievement"
+          },
+          {
+            "original": "Built an ATS scoring engine for keyword matching and action‑verb analysis to give users actionable resume feedback.",
+            "revised": "Designed and implemented an ATS scoring engine in Node.js that parses resumes, matches 150+ industry keywords, and ranks action‑verb usage, increasing user resume‑optimization success rate by 30% as measured by post‑submission interview callbacks.",
+            "reason": "Highlights technical depth, measurable impact on users, and ties the feature to a business outcome, making it more attractive to hiring managers"
+          }
+        ],
+        "wordCount": 453,
+        "formattingChecks": {
+          "hasEmail": true,
+          "hasPhone": true,
+          "hasEducationSection": true,
+          "hasExperienceSection": true
+        }
+      },
+      "created_at": "2026-10-11T18:38:17.923Z"
+    },
+    {
+      "id": "1f1e1fe6-5024-49b2-967f-8ea6330e6f2d",
+      "user_id": "916e26a2-0504-48f1-95cd-ba3853960a90",
+      "target_role": "Full-Stack Developer",
+      "analysis_result": {
+        "targetRole": "Full-Stack Developer",
+        "overallScore": 78,
+        "skillScore": 82,
+        "formattingScore": 71,
+        "executiveSummary": "Vinay is a proactive Computer Science student with solid full‑stack experience demonstrated through two end‑to‑end projects that include secure APIs, caching, and CI/CD pipelines. His background in cyber‑security and multiple cloud certifications adds a valuable security‑first mindset for modern web applications. With clear technical depth but limited professional metrics, he is well‑positioned for an entry‑level developer role.",
+        "detectedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "Java",
+          "SQL",
+          "HTML5",
+          "CSS3",
+          "React",
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "PostgreSQL",
+          "MySQL",
+          "Redis",
+          "AWS",
+          "Microsoft Azure",
+          "Docker",
+          "CI/CD",
+          "RESTful APIs",
+          "Git",
+          "Data Structures",
+          "Algorithms",
+          "Object-Oriented Programming",
+          "Problem Solving",
+          "Database Management",
+          "Computer Science",
+          "REST APIs",
+          "API Design",
+          "Authentication",
+          "Rate Limiting",
+          "Caching",
+          "Clean Code",
+          "Software Engineering",
+          "Documentation",
+          "Vite",
+          "Web Development",
+          "Cyber Security",
+          "React.js",
+          "AWS Cloud Practitioner"
+        ],
+        "matchedSkills": [
+          "JavaScript",
+          "TypeScript",
+          "React.js",
+          "Next.js",
+          "Node.js",
+          "Express.js",
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Docker",
+          "AWS Cloud Practitioner",
+          "Git"
+        ],
+        "missingSkills": [
+          "GraphQL",
+          "Jest/Mocha testing frameworks",
+          "GitHub Actions or other CI/CD pipeline tools",
+          "Kubernetes",
+          "Terraform or IaC",
+          "AWS Lambda/serverless deployment",
+          "Performance monitoring (e.g., New Relic, Datadog)",
+          "TypeScript advanced typing patterns"
+        ],
+        "strengths": [
+          "Two complete full‑stack projects with clear tech stack and security features",
+          "Hands‑on experience with Docker, CI/CD, and cloud platforms (AWS, Azure)",
+          "Cyber‑security internship demonstrating awareness of secure coding and threat analysis",
+          "Multiple relevant certifications and hackathon achievement"
+        ],
+        "improvements": [
+          "Add quantifiable results (e.g., latency reduction, user adoption) to project and internship bullets",
+          "Specify testing frameworks and coverage metrics to show code quality focus",
+          "Detail CI/CD tools (GitHub Actions, Jenkins) and any production deployment processes",
+          "Standardize resume formatting: consistent bullet style, section headers, and contact line layout"
+        ],
+        "bulletRevisions": [
+          {
+            "original": "Trained in network security, threat analysis, vulnerability assessment, and secure development fundamentals.",
+            "revised": "Conducted vulnerability assessments on 5+ internal applications, identifying 12 critical issues and recommending remediation that reduced security risk score by 30%.",
+            "reason": "Transforms a passive learning statement into a results‑driven achievement with measurable impact."
+          },
+          {
+            "original": "Completed ServiceNow Administration Fundamentals and Introduction to Agentic AI modules, building platform and automation fundamentals.",
+            "revised": "Earned ServiceNow Administration certification and built 3 automated workflows using Flow Designer, cutting manual ticket processing time by 25%.",
+            "reason": "Highlights certification, concrete deliverables, and a clear efficiency metric valued by engineering managers."
+          }
+        ],
+        "wordCount": 453,
+        "formattingChecks": {
+          "hasEmail": true,
+          "hasPhone": true,
+          "hasEducationSection": true,
+          "hasExperienceSection": true
+        }
+      },
+      "created_at": "2026-10-11T18:37:43.516Z"
+    },
+    {
+      "id": "7abfa415-4ec1-4c75-ad41-a2c49daf4df4",
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "target_role": "Full-Stack Developer",
+      "analysis_result": {
+        "targetRole": "Full-Stack Developer",
+        "overallScore": 38,
+        "skillScore": 55,
+        "formattingScore": 22,
+        "executiveSummary": "Vinay Krishna Yandamuri is a senior‑level full‑stack engineer with four years of hands‑on experience building React front‑ends and Node.js back‑ends. The resume conveys a clear technical focus but lacks depth, quantifiable results, and a structured layout that ATS systems and recruiters expect.",
+        "detectedSkills": [
+          "React",
+          "Node.js",
+          "Web Development",
+          "JavaScript"
+        ],
+        "matchedSkills": [
+          "React",
+          "Node.js",
+          "JavaScript"
+        ],
+        "missingSkills": [
+          "HTML",
+          "CSS",
+          "TypeScript",
+          "Express.js",
+          "SQL/NoSQL databases",
+          "Docker",
+          "CI/CD pipelines",
+          "AWS or other cloud services"
+        ],
+        "strengths": [
+          "Four years of focused full‑stack development experience",
+          "Senior title signals leadership potential",
+          "Explicit mention of core front‑end (React) and back‑end (Node.js) technologies"
+        ],
+        "improvements": [
+          "Add distinct sections (Contact, Summary, Experience, Education, Skills) with clear headings",
+          "Provide detailed bullet points for each role that include actions, technologies, and measurable outcomes",
+          "Expand the skill list to cover front‑end markup, database, DevOps, and cloud tools",
+          "Include quantifiable metrics (e.g., performance gains, user growth, revenue impact) to demonstrate impact"
+        ],
+        "bulletRevisions": [
+          {
+            "original": "Senior Full‑Stack Software Engineer with 4 years experience in React, Node.js",
+            "revised": "Led end‑to‑end development of React web applications and Node.js APIs, delivering features that increased user engagement by 27% and reduced page load time by 18%",
+            "reason": "Transforms a vague title into an achievement‑driven statement with specific metrics, showcasing both leadership and measurable impact"
+          },
+          {
+            "original": "Worked on the API and database",
+            "revised": "Designed and implemented RESTful APIs using Express.js and optimized PostgreSQL queries, cutting average response latency from 210 ms to 132 ms",
+            "reason": "Adds technology specifics, action verb, and concrete performance improvement, making the bullet ATS‑friendly and recruiter‑appealing"
+          }
+        ],
+        "wordCount": 15,
+        "formattingChecks": {
+          "hasEmail": false,
+          "hasPhone": false,
+          "hasEducationSection": false,
+          "hasExperienceSection": true
+        }
+      },
+      "created_at": "2026-10-11T18:36:32.672Z"
+    }
+  ],
+  "mock_interviews": [],
+  "learning_resources": [
+    {
+      "id": "res-fe-01",
+      "title": "MDN Web Docs — Modern JavaScript Guide",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+      "topic": "JavaScript",
+      "skill_name": "JavaScript",
+      "category": "Frontend",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "The authoritative reference for ECMAScript syntax, scope, closures, promises, and async/await."
+    },
+    {
+      "id": "res-fe-02",
+      "title": "JavaScript.info — The Modern JavaScript Tutorial",
+      "url": "https://javascript.info/",
+      "topic": "JavaScript",
+      "skill_name": "JavaScript",
+      "category": "Frontend",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Intermediate",
+      "description": "In-depth guide from basics to advanced topics including event loops, prototypes, and memory management."
+    },
+    {
+      "id": "res-fe-03",
+      "title": "Official TypeScript Handbook",
+      "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+      "topic": "TypeScript",
+      "skill_name": "TypeScript",
+      "category": "Frontend",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Master static typing, generics, utility types, and strict mode compiler configurations."
+    },
+    {
+      "id": "res-fe-04",
+      "title": "Total TypeScript Interactive Tutorials",
+      "url": "https://www.totaltypescript.com/tutorials",
+      "topic": "TypeScript",
+      "skill_name": "TypeScript",
+      "category": "Frontend",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Advanced",
+      "description": "Hands-on interactive exercises solving real-world TypeScript type transformation challenges."
+    },
+    {
+      "id": "res-fe-05",
+      "title": "React Official Documentation (react.dev)",
+      "url": "https://react.dev/learn",
+      "topic": "React",
+      "skill_name": "React",
+      "category": "Frontend",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Modern component-driven development, state hooks, effect lifecycles, and interactive examples."
+    },
+    {
+      "id": "res-fe-06",
+      "title": "React Hooks & Built-in APIs Reference",
+      "url": "https://react.dev/reference/react",
+      "topic": "React",
+      "skill_name": "React",
+      "category": "Frontend",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Comprehensive API specifications for useState, useEffect, useMemo, useCallback, and context."
+    },
+    {
+      "id": "res-fe-07",
+      "title": "Next.js App Router Documentation",
+      "url": "https://nextjs.org/docs",
+      "topic": "Next.js",
+      "skill_name": "Next.js",
+      "category": "Frontend",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Full-stack React framework with server components, streaming SSR, API routes, and asset optimization."
+    },
+    {
+      "id": "res-fe-08",
+      "title": "Next.js Interactive Learn Course",
+      "url": "https://nextjs.org/learn",
+      "topic": "Next.js",
+      "skill_name": "Next.js",
+      "category": "Frontend",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Beginner",
+      "description": "Build a production-grade financial dashboard step-by-step from database to authentication."
+    },
+    {
+      "id": "res-fe-09",
+      "title": "MDN HTML & CSS Fundamentals",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web",
+      "topic": "HTML & CSS",
+      "skill_name": "HTML",
+      "category": "Frontend",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Semantic HTML markup, CSS box model, responsive layouts, Flexbox, and CSS Grid essentials."
+    },
+    {
+      "id": "res-fe-10",
+      "title": "Tailwind CSS Documentation & Utility Reference",
+      "url": "https://tailwindcss.com/docs",
+      "topic": "Tailwind CSS",
+      "skill_name": "Tailwind CSS",
+      "category": "Frontend",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Utility-first CSS framework for rapid responsive design, dark mode, and design system integration."
+    },
+    {
+      "id": "res-fe-11",
+      "title": "Vue.js 3 Official Guide",
+      "url": "https://vuejs.org/guide/introduction.html",
+      "topic": "Vue.js",
+      "skill_name": "Vue.js",
+      "category": "Frontend",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Progressive JavaScript framework featuring the Composition API, single-file components, and reactivity."
+    },
+    {
+      "id": "res-fe-12",
+      "title": "Redux Toolkit Official Quick Start",
+      "url": "https://redux-toolkit.js.org/introduction/getting-started",
+      "topic": "Redux",
+      "skill_name": "Redux",
+      "category": "Frontend",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Standard, opinionated way to write predictable state logic with RTK Query and slices."
+    },
+    {
+      "id": "res-fe-13",
+      "title": "Vite Next-Generation Frontend Tooling",
+      "url": "https://vitejs.dev/guide/",
+      "topic": "Vite",
+      "skill_name": "Vite",
+      "category": "Frontend",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Ultra-fast native ESM dev server, lightning Hot Module Replacement (HMR), and Rollup production builds."
+    },
+    {
+      "id": "res-be-01",
+      "title": "Node.js API & Architecture Guides",
+      "url": "https://nodejs.org/docs/latest/api/",
+      "topic": "Node.js",
+      "skill_name": "Node.js",
+      "category": "Backend",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Official API reference for streams, buffers, file system, HTTP servers, and cluster clustering."
+    },
+    {
+      "id": "res-be-02",
+      "title": "Production Node.js Best Practices Repository",
+      "url": "https://github.com/goldbergyoni/nodebestpractices",
+      "topic": "Node.js",
+      "skill_name": "Node.js",
+      "category": "Backend",
+      "resource_type": "Curated Guide",
+      "difficulty": "Advanced",
+      "description": "Over 80 actionable industry best practices for robust architecture, error handling, and security."
+    },
+    {
+      "id": "res-be-03",
+      "title": "Express.js Getting Started & Routing Guide",
+      "url": "https://expressjs.com/en/starter/installing.html",
+      "topic": "Express",
+      "skill_name": "Express",
+      "category": "Backend",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Fast, unopinionated, minimalist web framework for Node.js API development and middleware handling."
+    },
+    {
+      "id": "res-be-04",
+      "title": "Python 3 Official Tutorial",
+      "url": "https://docs.python.org/3/tutorial/index.html",
+      "topic": "Python",
+      "skill_name": "Python",
+      "category": "Backend",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Python core concepts, standard library modules, object-oriented programming, and file operations."
+    },
+    {
+      "id": "res-be-05",
+      "title": "Real Python In-Depth Tutorials & Learning Paths",
+      "url": "https://realpython.com/",
+      "topic": "Python",
+      "skill_name": "Python",
+      "category": "Backend",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Intermediate",
+      "description": "Practical, project-centric tutorials on virtual environments, decorators, generators, and testing."
+    },
+    {
+      "id": "res-be-06",
+      "title": "FastAPI Interactive Tutorial & OpenAPI Docs",
+      "url": "https://fastapi.tiangolo.com/tutorial/",
+      "topic": "FastAPI",
+      "skill_name": "FastAPI",
+      "category": "Backend",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Modern, high-performance web framework for Python 3.8+ APIs based on standard type hints and Pydantic."
+    },
+    {
+      "id": "res-be-07",
+      "title": "Django Official Web Framework Tutorial",
+      "url": "https://docs.djangoproject.com/en/stable/intro/tutorial01/",
+      "topic": "Django",
+      "skill_name": "Django",
+      "category": "Backend",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "The batteries-included Python framework for rapid development, ORM models, migrations, and admin portals."
+    },
+    {
+      "id": "res-be-08",
+      "title": "Spring Boot Building a RESTful Web Service",
+      "url": "https://spring.io/guides/gs/rest-service/",
+      "topic": "Java",
+      "skill_name": "Java",
+      "category": "Backend",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Build enterprise-grade Java web microservices with dependency injection and embedded servers."
+    },
+    {
+      "id": "res-be-09",
+      "title": "A Tour of Go (Golang) Interactive Playground",
+      "url": "https://go.dev/tour/welcome/1",
+      "topic": "Go",
+      "skill_name": "Go",
+      "category": "Backend",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Beginner",
+      "description": "Interactive introduction to Go syntax, concurrency primitives (goroutines and channels), and interfaces."
+    },
+    {
+      "id": "res-be-10",
+      "title": "Go by Example — Hands-on Code Patterns",
+      "url": "https://gobyexample.com/",
+      "topic": "Go",
+      "skill_name": "Go",
+      "category": "Backend",
+      "resource_type": "Curated Guide",
+      "difficulty": "Intermediate",
+      "description": "Concise, annotated code examples covering web servers, JSON serialization, contexts, and mutexes."
+    },
+    {
+      "id": "res-be-11",
+      "title": "GraphQL Official Introduction & Schema Guide",
+      "url": "https://graphql.org/learn/",
+      "topic": "GraphQL",
+      "skill_name": "GraphQL",
+      "category": "Backend",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Query language for APIs providing exact data requirements, schema type definitions, and resolvers."
+    },
+    {
+      "id": "res-be-12",
+      "title": "Apollo GraphQL Full-Stack Tutorials",
+      "url": "https://www.apollographql.com/docs/",
+      "topic": "GraphQL",
+      "skill_name": "GraphQL",
+      "category": "Backend",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Intermediate",
+      "description": "End-to-end guide on building GraphQL schemas with Apollo Server and integrating Apollo Client."
+    },
+    {
+      "id": "res-be-13",
+      "title": "RESTful API Architectural Guidelines",
+      "url": "https://restfulapi.net/",
+      "topic": "REST APIs",
+      "skill_name": "REST APIs",
+      "category": "Backend",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Principles of REST: HTTP status codes, idempotency, versioning, pagination, and HATEOAS."
+    },
+    {
+      "id": "res-db-01",
+      "title": "PostgreSQL Official Tutorial & Reference",
+      "url": "https://www.postgresql.org/docs/current/tutorial.html",
+      "topic": "PostgreSQL",
+      "skill_name": "PostgreSQL",
+      "category": "Database",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Enterprise relational database tutorial: ACID transactions, foreign keys, window functions, and JSONB."
+    },
+    {
+      "id": "res-db-02",
+      "title": "Use The Index, Luke! — SQL Indexing & Tuning",
+      "url": "https://use-the-index-luke.com/",
+      "topic": "SQL",
+      "skill_name": "SQL",
+      "category": "Database",
+      "resource_type": "Curated Guide",
+      "difficulty": "Advanced",
+      "description": "A developer-focused guide explaining B-tree indexes, execution plans, join algorithms, and slow queries."
+    },
+    {
+      "id": "res-db-03",
+      "title": "MongoDB University & Developer Manual",
+      "url": "https://www.mongodb.com/docs/manual/",
+      "topic": "MongoDB",
+      "skill_name": "MongoDB",
+      "category": "Database",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Document-oriented database concepts: BSON schemas, aggregation pipelines, and sharding strategies."
+    },
+    {
+      "id": "res-db-04",
+      "title": "Redis Official Documentation & Data Structures",
+      "url": "https://redis.io/docs/latest/",
+      "topic": "Redis",
+      "skill_name": "Redis",
+      "category": "Database",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "High-speed in-memory store for distributed caching, session tracking, pub/sub messaging, and rate limiting."
+    },
+    {
+      "id": "res-db-05",
+      "title": "SQLZoo Interactive SQL Practice Playground",
+      "url": "https://sqlzoo.net/",
+      "topic": "SQL",
+      "skill_name": "SQL",
+      "category": "Database",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Beginner",
+      "description": "Hands-on live SQL quizzes testing SELECT queries, JOINs, GROUP BY, aggregations, and subqueries."
+    },
+    {
+      "id": "res-db-06",
+      "title": "Prisma ORM Getting Started Guide",
+      "url": "https://www.prisma.io/docs/getting-started",
+      "topic": "Prisma",
+      "skill_name": "Prisma",
+      "category": "Database",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Next-generation TypeScript ORM featuring type-safe client generation, migrations, and schema studio."
+    },
+    {
+      "id": "res-ops-01",
+      "title": "Docker Official Getting Started Guide",
+      "url": "https://docs.docker.com/get-started/",
+      "topic": "Docker",
+      "skill_name": "Docker",
+      "category": "DevOps & Cloud",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Container fundamentals: writing Dockerfiles, managing multi-stage builds, volumes, and port binding."
+    },
+    {
+      "id": "res-ops-02",
+      "title": "Kubernetes Basics & Interactive Tutorials",
+      "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/",
+      "topic": "Kubernetes",
+      "skill_name": "Kubernetes",
+      "category": "DevOps & Cloud",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Production container orchestration: pods, deployments, services, ingress controllers, and auto-scaling."
+    },
+    {
+      "id": "res-ops-03",
+      "title": "AWS Skill Builder Cloud Practitioner Foundations",
+      "url": "https://explore.skillbuilder.aws/",
+      "topic": "AWS",
+      "skill_name": "AWS",
+      "category": "DevOps & Cloud",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Beginner",
+      "description": "Free official learning path covering EC2 instances, S3 storage buckets, Lambda serverless, and IAM roles."
+    },
+    {
+      "id": "res-ops-04",
+      "title": "AWS Well-Architected Framework & Whitepapers",
+      "url": "https://aws.amazon.com/architecture/",
+      "topic": "AWS",
+      "skill_name": "AWS",
+      "category": "DevOps & Cloud",
+      "resource_type": "Curated Guide",
+      "difficulty": "Advanced",
+      "description": "Architectural blueprints covering cloud reliability, cost optimization, operational excellence, and security."
+    },
+    {
+      "id": "res-ops-05",
+      "title": "GitHub Actions Workflow Automation Docs",
+      "url": "https://docs.github.com/en/actions",
+      "topic": "CI/CD",
+      "skill_name": "CI/CD",
+      "category": "DevOps & Cloud",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Automate build, test, and deployment CI/CD pipelines with custom GitHub Action workflow triggers."
+    },
+    {
+      "id": "res-ops-06",
+      "title": "Linux Journey — Free Interactive Linux Guide",
+      "url": "https://linuxjourney.com/",
+      "topic": "Linux",
+      "skill_name": "Linux",
+      "category": "DevOps & Cloud",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Beginner",
+      "description": "Master the bash shell, file permissions, processes, networking, systemd, and disk management."
+    },
+    {
+      "id": "res-ops-07",
+      "title": "HashiCorp Terraform Infrastructure as Code Tutorials",
+      "url": "https://developer.hashicorp.com/terraform/tutorials",
+      "topic": "Terraform",
+      "skill_name": "Terraform",
+      "category": "DevOps & Cloud",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Declare and automate cloud infrastructure across providers using HCL configuration modules."
+    },
+    {
+      "id": "res-ops-08",
+      "title": "Pro Git Book (Complete Official Guide)",
+      "url": "https://git-scm.com/book/en/v2",
+      "topic": "Git",
+      "skill_name": "Git",
+      "category": "DevOps & Cloud",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Comprehensive guide to version control: branching strategies, merge conflicts, interactive rebasing, and internals."
+    },
+    {
+      "id": "res-ai-01",
+      "title": "Google Machine Learning Crash Course",
+      "url": "https://developers.google.com/machine-learning/crash-course",
+      "topic": "Machine Learning",
+      "skill_name": "Machine Learning",
+      "category": "AI & Data",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Beginner",
+      "description": "Google self-study guide with video lectures, case studies, and hands-on TensorFlow practice exercises."
+    },
+    {
+      "id": "res-ai-02",
+      "title": "Scikit-Learn Machine Learning in Python Guide",
+      "url": "https://scikit-learn.org/stable/user_guide.html",
+      "topic": "Machine Learning",
+      "skill_name": "Machine Learning",
+      "category": "AI & Data",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Practical guide to classification, regression, clustering, dimensionality reduction, and model evaluation."
+    },
+    {
+      "id": "res-ai-03",
+      "title": "PyTorch Official Deep Learning Tutorials",
+      "url": "https://pytorch.org/tutorials/",
+      "topic": "PyTorch",
+      "skill_name": "PyTorch",
+      "category": "AI & Data",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Build neural networks with tensors, autograd differentiation, convolutional layers, and GPU acceleration."
+    },
+    {
+      "id": "res-ai-04",
+      "title": "TensorFlow Core Step-by-Step Tutorials",
+      "url": "https://www.tensorflow.org/tutorials",
+      "topic": "TensorFlow",
+      "skill_name": "TensorFlow",
+      "category": "AI & Data",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "End-to-end machine learning platform guides covering Keras APIs, dataset pipelines, and model export."
+    },
+    {
+      "id": "res-ai-05",
+      "title": "Pandas Official 10-Minute User Guide",
+      "url": "https://pandas.pydata.org/docs/user_guide/10min.html",
+      "topic": "Pandas",
+      "skill_name": "Pandas",
+      "category": "AI & Data",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Fast data manipulation and analysis with Series, DataFrames, indexing, filtering, and grouping."
+    },
+    {
+      "id": "res-ai-06",
+      "title": "LangChain Python Documentation for LLM Apps",
+      "url": "https://python.langchain.com/docs/get_started/introduction",
+      "topic": "LangChain",
+      "skill_name": "LangChain",
+      "category": "AI & Data",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Framework for developing applications powered by language models, agents, memory, and vector stores."
+    },
+    {
+      "id": "res-ai-07",
+      "title": "Hugging Face NLP & Transformers Course",
+      "url": "https://huggingface.co/learn/nlp-course",
+      "topic": "NLP",
+      "skill_name": "NLP",
+      "category": "AI & Data",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Intermediate",
+      "description": "Free comprehensive course on fine-tuning open-source LLMs, tokenization, embeddings, and pipeline inference."
+    },
+    {
+      "id": "res-cs-01",
+      "title": "NeetCode Curated DSA Roadmap & Blind 75",
+      "url": "https://neetcode.io/roadmap",
+      "topic": "Data Structures & Algorithms",
+      "skill_name": "Data Structures",
+      "category": "Core CS & System Design",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Intermediate",
+      "description": "Visual roadmap for coding interview problem patterns: two pointers, binary search, sliding window, and graphs."
+    },
+    {
+      "id": "res-cs-02",
+      "title": "Visualgo — Visualising Data Structures and Algorithms",
+      "url": "https://visualgo.net/en",
+      "topic": "Data Structures & Algorithms",
+      "skill_name": "Algorithms",
+      "category": "Core CS & System Design",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Beginner",
+      "description": "Animated step-by-step visualizations of sorting algorithms, binary search trees, hash tables, and graph traversals."
+    },
+    {
+      "id": "res-cs-03",
+      "title": "System Design Primer (GitHub — Donne Martin)",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "topic": "System Design",
+      "skill_name": "System Design",
+      "category": "Core CS & System Design",
+      "resource_type": "Curated Guide",
+      "difficulty": "Advanced",
+      "description": "An open-source primer covering scalability, load balancing, caching tiers, message queues, and CAP theorem."
+    },
+    {
+      "id": "res-cs-04",
+      "title": "ByteByteGo System Design Architecture Blog",
+      "url": "https://bytebytego.com/",
+      "topic": "System Design",
+      "skill_name": "System Design",
+      "category": "Core CS & System Design",
+      "resource_type": "Curated Guide",
+      "difficulty": "Intermediate",
+      "description": "Clear visual breakdowns of large-scale systems: YouTube, URL shorteners, distributed rate limiters, and payment APIs."
+    },
+    {
+      "id": "res-cs-05",
+      "title": "Refactoring.Guru Software Design Patterns",
+      "url": "https://refactoring.guru/design-patterns",
+      "topic": "Design Patterns",
+      "skill_name": "Design Patterns",
+      "category": "Core CS & System Design",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Visual explanations of Creational, Structural, and Behavioral design patterns with code examples in multiple languages."
+    },
+    {
+      "id": "res-qa-01",
+      "title": "Jest JavaScript Testing Framework Docs",
+      "url": "https://jestjs.io/docs/getting-started",
+      "topic": "Jest",
+      "skill_name": "Testing",
+      "category": "Testing & Tools",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Delightful testing with zero config, mocking functions, snapshot tests, and coverage reporting."
+    },
+    {
+      "id": "res-qa-02",
+      "title": "Cypress End-to-End Modern Web Testing",
+      "url": "https://docs.cypress.io/guides/overview/why-cypress",
+      "topic": "Cypress",
+      "skill_name": "Testing",
+      "category": "Testing & Tools",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Next-generation browser testing for frontends with time travel debugging, real-time reloads, and network interception."
+    },
+    {
+      "id": "res-sec-01",
+      "title": "OWASP Top 10 Web Application Vulnerabilities",
+      "url": "https://owasp.org/www-project-top-ten/",
+      "topic": "Cybersecurity",
+      "skill_name": "Security",
+      "category": "Testing & Tools",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Standard security awareness document for developers: Broken Access Control, Injection, and Cryptographic Failures."
+    },
+    {
+      "id": "res-sec-02",
+      "title": "PortSwigger Web Security Academy",
+      "url": "https://portswigger.net/web-security",
+      "topic": "Cybersecurity",
+      "skill_name": "Security",
+      "category": "Testing & Tools",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Intermediate",
+      "description": "Free, interactive online training on web security and ethical hacking with interactive lab environments."
+    },
+    {
+      "id": "res-mob-01",
+      "title": "React Native Official Documentation",
+      "url": "https://reactnative.dev/docs/getting-started",
+      "topic": "React Native",
+      "skill_name": "React Native",
+      "category": "Mobile & UI",
+      "resource_type": "Documentation",
+      "difficulty": "Intermediate",
+      "description": "Create truly native mobile applications for iOS and Android using React and JavaScript."
+    },
+    {
+      "id": "res-mob-02",
+      "title": "Flutter Official Documentation & Codelabs",
+      "url": "https://docs.flutter.dev/",
+      "topic": "Flutter",
+      "skill_name": "Flutter",
+      "category": "Mobile & UI",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Multi-platform UI toolkit by Google for crafting natively compiled apps from a single Dart codebase."
+    },
+    {
+      "id": "res-mob-03",
+      "title": "Figma Official Learn Design & UI Systems",
+      "url": "https://help.figma.com/hc/en-us/categories/360002051613-Learn-design",
+      "topic": "Figma",
+      "skill_name": "Figma",
+      "category": "Mobile & UI",
+      "resource_type": "Documentation",
+      "difficulty": "Beginner",
+      "description": "Collaborative interface design tool tutorials: auto-layout, component variants, and design token systems."
+    },
+    {
+      "id": "f235e89f-9b28-43a3-b623-a559b295a9f2",
+      "title": "Rust API Guidelines",
+      "url": "https://rust-lang.github.io/api-guidelines/",
+      "topic": "rust",
+      "skill_name": "rust",
+      "category": "Core CS & System Design",
+      "resource_type": "Architecture Reference",
+      "difficulty": "Advanced",
+      "description": "Gold‑standard guide for designing safe, ergonomic, and maintainable Rust libraries and APIs; essential for architects and experienced developers.",
+      "created_at": "2026-10-12T06:48:53.021Z"
+    },
+    {
+      "id": "e2d280ef-47f1-4229-8681-8bbdb2763b6f",
+      "title": "Rust by Example",
+      "url": "https://doc.rust-lang.org/rust-by-example/",
+      "topic": "rust",
+      "skill_name": "rust",
+      "category": "Core CS & System Design",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Intermediate",
+      "description": "Hands‑on collection of runnable examples that illustrate core concepts and idiomatic patterns, ideal for reinforcing learning through practice.",
+      "created_at": "2026-10-12T06:48:53.014Z"
+    },
+    {
+      "id": "054cce17-f1e6-4251-a037-7545330850f6",
+      "title": "Rust Reference",
+      "url": "https://doc.rust-lang.org/reference/",
+      "topic": "rust",
+      "skill_name": "rust",
+      "category": "Core CS & System Design",
+      "resource_type": "Official Documentation",
+      "difficulty": "Advanced",
+      "description": "Authoritative language specification detailing semantics, type system, and unsafe code rules; indispensable for deep system‑level understanding.",
+      "created_at": "2026-10-12T06:48:53.007Z"
+    },
+    {
+      "id": "51d596f6-6ab9-4d03-a006-c384c82de5c1",
+      "title": "The Rust Programming Language (The Book)",
+      "url": "https://doc.rust-lang.org/book/",
+      "topic": "rust",
+      "skill_name": "rust",
+      "category": "Core CS & System Design",
+      "resource_type": "Official Documentation",
+      "difficulty": "Beginner",
+      "description": "Comprehensive introduction to Rust covering syntax, ownership, concurrency, and best practices; essential for anyone starting with the language.",
+      "created_at": "2026-10-12T06:48:52.997Z"
+    },
+    {
+      "id": "eda483f5-c7cf-4845-b2e6-cd705751b034",
+      "title": "Real Python: Python Basics",
+      "url": "https://realpython.com/python-basics/",
+      "topic": "python basics",
+      "skill_name": "python basics",
+      "category": "Backend",
+      "resource_type": "Curated Guide",
+      "difficulty": "Beginner",
+      "description": "Comprehensive guide with tutorials, examples, and quizzes that introduce variables, data types, control flow, functions, and best practices for writing clean Python code.",
+      "created_at": "2026-10-12T06:00:27.373Z"
+    },
+    {
+      "id": "aabb6263-0137-43b0-94c1-510dbc436d3f",
+      "title": "Google’s Python Class",
+      "url": "https://developers.google.com/edu/python/",
+      "topic": "python basics",
+      "skill_name": "python basics",
+      "category": "Backend",
+      "resource_type": "Curated Guide",
+      "difficulty": "Beginner",
+      "description": "Free class with written materials, lecture videos, and exercises focusing on core Python concepts for programmers new to the language.",
+      "created_at": "2026-10-12T06:00:27.367Z"
+    },
+    {
+      "id": "fb01198c-f22f-403b-9da7-9d3209f024b2",
+      "title": "Codecademy Learn Python 3",
+      "url": "https://www.codecademy.com/learn/learn-python-3",
+      "topic": "python basics",
+      "skill_name": "python basics",
+      "category": "Backend",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Beginner",
+      "description": "Interactive, hands‑on lessons that teach Python basics such as variables, loops, functions, and basic data structures with immediate feedback.",
+      "created_at": "2026-10-12T06:00:27.359Z"
+    },
+    {
+      "id": "973c1a97-92de-4ae2-a490-91b4cbffe821",
+      "title": "Python Official Tutorial",
+      "url": "https://docs.python.org/3/tutorial/",
+      "topic": "python basics",
+      "skill_name": "python basics",
+      "category": "Backend",
+      "resource_type": "Official Documentation",
+      "difficulty": "Beginner",
+      "description": "Covers fundamental syntax, data types, control flow, functions, and modules, providing the authoritative foundation for Python programming.",
+      "created_at": "2026-10-12T06:00:27.352Z"
+    },
+    {
+      "id": "a3edfdf8-5985-4c1e-a468-222b7cefc086",
+      "title": "freeCodeCamp Responsive Web Design Certification",
+      "url": "https://www.freecodecamp.org/learn/responsive-web-design/",
+      "topic": "html",
+      "skill_name": "html",
+      "category": "Frontend",
+      "resource_type": "Curated Guide",
+      "difficulty": "Intermediate",
+      "description": "A structured curriculum combining HTML, CSS, and projects to build real‑world responsive web pages.",
+      "created_at": "2026-10-12T03:42:17.478Z"
+    },
+    {
+      "id": "d63b2539-db9e-406b-bc45-4025fca441a2",
+      "title": "HTML Living Standard (WHATWG)",
+      "url": "https://html.spec.whatwg.org/multipage/",
+      "topic": "html",
+      "skill_name": "html",
+      "category": "Frontend",
+      "resource_type": "Architecture Reference",
+      "difficulty": "Advanced",
+      "description": "The authoritative, continuously updated HTML specification defining the language's formal grammar and APIs.",
+      "created_at": "2026-10-12T03:42:17.475Z"
+    },
+    {
+      "id": "b59ad1d3-e1cf-485d-96cc-fa3a0a901cc8",
+      "title": "W3Schools HTML Tutorial",
+      "url": "https://www.w3schools.com/html/",
+      "topic": "html",
+      "skill_name": "html",
+      "category": "Frontend",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Beginner",
+      "description": "Step‑by‑step interactive lessons with live editor, ideal for hands‑on learning of core HTML tags.",
+      "created_at": "2026-10-12T03:42:17.464Z"
+    },
+    {
+      "id": "e8b04644-d593-4ad4-9130-76c93c577a54",
+      "title": "MDN Web Docs – HTML Guide",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "topic": "html",
+      "skill_name": "html",
+      "category": "Frontend",
+      "resource_type": "Official Documentation",
+      "difficulty": "Beginner",
+      "description": "Comprehensive reference covering HTML elements, semantics, and best practices, maintained by Mozilla.",
+      "created_at": "2026-10-12T03:42:17.457Z"
+    },
+    {
+      "id": "831119a6-7dee-4e87-bb2b-25ea99871019",
+      "title": "Consensys Smart Contract Best Practices",
+      "url": "https://github.com/Consensys/smart-contract-best-practices",
+      "topic": "Solidity",
+      "skill_name": "Solidity",
+      "category": "Backend",
+      "resource_type": "Curated Guide",
+      "difficulty": "Advanced",
+      "description": "Curated guide of security patterns, anti‑patterns, and auditing tips to write safe Solidity code.",
+      "created_at": "2026-10-12T03:38:00.186Z"
+    },
+    {
+      "id": "aa381ab5-6e61-4c7a-bc7d-aef5bc7860cd",
+      "title": "OpenZeppelin Contracts",
+      "url": "https://github.com/OpenZeppelin/openzeppelin-contracts",
+      "topic": "Solidity",
+      "skill_name": "Solidity",
+      "category": "Backend",
+      "resource_type": "Architecture Reference",
+      "difficulty": "Intermediate",
+      "description": "Industry‑standard library of secure, reusable smart contract components and design patterns for building robust applications.",
+      "created_at": "2026-10-12T03:38:00.181Z"
+    },
+    {
+      "id": "bc246592-5d61-45a3-b1f2-74f9aa4a5511",
+      "title": "Solidity by Example",
+      "url": "https://solidity-by-example.org/",
+      "topic": "Solidity",
+      "skill_name": "Solidity",
+      "category": "Backend",
+      "resource_type": "Interactive Tutorial",
+      "difficulty": "Beginner",
+      "description": "Hands‑on interactive tutorial with runnable examples that teach core Solidity concepts step‑by‑step.",
+      "created_at": "2026-10-12T03:38:00.178Z"
+    },
+    {
+      "id": "1acf9138-bf6f-458f-bebc-770ccb40ce84",
+      "title": "Solidity Documentation",
+      "url": "https://docs.soliditylang.org/en/latest/",
+      "topic": "Solidity",
+      "skill_name": "Solidity",
+      "category": "Backend",
+      "resource_type": "Official Documentation",
+      "difficulty": "Beginner",
+      "description": "Comprehensive official reference covering syntax, language features, and best practices for writing secure smart contracts.",
+      "created_at": "2026-10-12T03:38:00.174Z"
+    }
+  ],
+  "job_applications": [
+    {
+      "id": "efad0e2a-c31d-4f98-9b7d-c6c57119dfaf",
+      "user_id": "916e26a2-0504-48f1-95cd-ba3853960a90",
+      "company": "Ediko",
+      "position": "Sde",
+      "location": "Office",
+      "status": "Rejected",
+      "salary": "20k",
+      "applied_date": "2026-10-11",
+      "notes": "",
+      "created_at": "2026-10-11T18:44:28.478Z",
+      "updated_at": "2026-10-11T18:44:28.478Z"
+    },
+    {
+      "id": "a97f020a-7658-45a2-a99a-81022c28c2d6",
+      "user_id": "916e26a2-0504-48f1-95cd-ba3853960a90",
+      "company": "Google",
+      "position": "Frontend",
+      "location": "Office",
+      "status": "Offer",
+      "salary": "30k",
+      "applied_date": "2026-10-11",
+      "notes": "",
+      "created_at": "2026-10-11T18:44:03.502Z",
+      "updated_at": "2026-10-12T05:58:59.847Z"
+    },
+    {
+      "id": "874034c0-5558-4253-b69a-1d21cad4368c",
+      "user_id": "916e26a2-0504-48f1-95cd-ba3853960a90",
+      "company": "Google",
+      "position": "Sde-1",
+      "location": "Remote",
+      "status": "Applied",
+      "salary": "",
+      "applied_date": "2026-10-11",
+      "notes": "On-processing",
+      "created_at": "2026-10-11T18:43:16.109Z",
+      "updated_at": "2026-10-12T05:59:05.840Z"
+    },
+    {
+      "id": "9cddc60d-be23-4019-8174-a58fb93e9d54",
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "company": "Anthropic / Google",
+      "position": "AI Solutions Engineer",
+      "location": "Remote",
+      "status": "Applied",
+      "salary": "",
+      "applied_date": "2026-10-11",
+      "notes": "",
+      "created_at": "2026-10-11T18:03:15.488Z",
+      "updated_at": "2026-10-11T18:03:15.488Z"
+    }
+  ],
+  "study_sessions": [
+    {
+      "id": "c716bc54-1f9f-4e7a-af56-49c7689ad532",
+      "user_id": "00000000-0000-4000-8000-000000000001",
+      "subject": "LangChain & Vector DBs",
+      "duration_minutes": 90,
+      "completed": true,
+      "session_date": "2026-10-11",
+      "created_at": "2026-10-11T18:03:15.482Z"
+    }
+  ],
+  "user_projects": []
+}
