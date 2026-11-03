@@ -55,8 +55,12 @@ export const AuthProvider = ({ children }) => {
     checkAuth();
   }, []);
 
-  const login = async (email, password) => {
-    const res = await api.post('/auth/login', { email, password });
+  const login = async (emailOrObj, maybePassword) => {
+    const payload =
+      typeof emailOrObj === 'object' && emailOrObj !== null
+        ? emailOrObj
+        : { email: emailOrObj, password: maybePassword };
+    const res = await api.post('/auth/login', payload);
     if (res.data.success) {
       const token = res.data.token;
       if (token) {
@@ -71,8 +75,12 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const register = async (name, email, password) => {
-    const res = await api.post('/auth/register', { name, email, password });
+  const register = async (nameOrObj, maybeEmail, maybePassword) => {
+    const payload =
+      typeof nameOrObj === 'object' && nameOrObj !== null
+        ? nameOrObj
+        : { name: nameOrObj, email: maybeEmail, password: maybePassword };
+    const res = await api.post('/auth/register', payload);
     if (res.data.success) {
       const token = res.data.token;
       if (token) {
