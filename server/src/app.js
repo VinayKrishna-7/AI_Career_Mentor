@@ -5,8 +5,15 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import cookieParser from 'cookie-parser';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import fs from 'fs';
 import { testConnection } from './config/db.js';
 import { errorHandler } from './middleware/errorHandler.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const clientDist = path.resolve(__dirname, '../../client/dist');
 
 // Route imports
 import authRoutes from './routes/auth.routes.js';
@@ -24,7 +31,11 @@ import plannerRoutes from './routes/planner.routes.js';
 const app = express();
 
 // Security headers
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
 
 // CORS configuration supporting cookies
 const clientOrigin = process.env.CLIENT_URL || 'http://localhost:5173';
@@ -75,6 +86,16 @@ app.use('/api/*', (req, res) => {
     message: `API endpoint ${req.method} ${req.originalUrl} not found.`,
   });
 });
+
+// Serve frontend build files in production / single-service deployments
+if (fs.existsSync(clientDist)) {
+  app.use(express.static(clientDist));
+
+  // SPA fallback: any other route serves index.html
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(clientDist, 'index.html'));
+  });
+}
 
 // Centralized error handler
 app.use(errorHandler);
