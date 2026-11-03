@@ -1,5 +1,7 @@
 # AI Career Mentor
 
+**Live Demo:** [https://ai-career-mentor-mfet.onrender.com](https://ai-career-mentor-mfet.onrender.com)
+
 AI Career Mentor is an AI-powered career guidance platform that helps users identify suitable career paths, analyze skill gaps, generate personalized learning roadmaps, improve resumes, and prepare for interviews. It provides tailored recommendations to help users achieve their career goals.
 
 [Live Demo]([https://careerly-9q76.onrender.com/](https://ai-career-mentor-mfet.onrender.com))
@@ -28,3 +30,5 @@ cp server/.env.example server/.env
 npm run dev
 ```
 
+- **Live Application:** [https://ai-career-mentor-mfet.onrender.com](https://ai-career-mentor-mfet.onrender.com)
+- **Local Application:** [http://localhost:5173](http://localhost:5173)
