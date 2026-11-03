@@ -859,15 +859,12 @@ class MemoryStore {
     }
 
     // 1. USERS
-    if (lower.startsWith('select id from users where email = $1')) {
-      const email = (params[0] || '').toLowerCase();
-      const user = this.users.find((u) => u.email.toLowerCase() === email);
-      return { rows: user ? [{ id: user.id }] : [], rowCount: user ? 1 : 0 };
-    }
-
-    if (lower.startsWith('select id, name, email, password_hash, created_at from users where email = $1')) {
-      const email = (params[0] || '').toLowerCase();
-      const user = this.users.find((u) => u.email.toLowerCase() === email);
+    if (lower.includes('from users where email = $1') || lower.includes('from users where lower(email) = $1')) {
+      const email = (params[0] || '').toLowerCase().trim();
+      const user = this.users.find((u) => u.email.toLowerCase().trim() === email);
+      if (lower.startsWith('select id from users')) {
+        return { rows: user ? [{ id: user.id }] : [], rowCount: user ? 1 : 0 };
+      }
       return { rows: user ? [user] : [], rowCount: user ? 1 : 0 };
     }
 

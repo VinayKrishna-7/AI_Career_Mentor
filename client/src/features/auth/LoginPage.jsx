@@ -5,8 +5,9 @@ import { useTheme } from '../../context/ThemeContext';
 import { Sun, Moon, Loader2, AlertCircle } from 'lucide-react';
 
 export const LoginPage = () => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState(() => localStorage.getItem('career_mentor_remembered_email') || '');
   const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(true);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const { login } = useAuth();
@@ -19,7 +20,13 @@ export const LoginPage = () => {
     setLoading(true);
 
     try {
-      await login(email, password);
+      const cleanEmail = email.trim();
+      if (rememberMe) {
+        localStorage.setItem('career_mentor_remembered_email', cleanEmail);
+      } else {
+        localStorage.removeItem('career_mentor_remembered_email');
+      }
+      await login(cleanEmail, password);
       navigate('/dashboard');
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to sign in. Please check your credentials.');
@@ -68,11 +75,14 @@ export const LoginPage = () => {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-[11px] font-semibold uppercase tracking-wider text-[#A2AAA5] mb-1.5">
+              <label htmlFor="email" className="block text-[11px] font-semibold uppercase tracking-wider text-[#A2AAA5] mb-1.5">
                 Email Address
               </label>
               <input
+                id="email"
+                name="email"
                 type="email"
+                autoComplete="username email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -82,17 +92,32 @@ export const LoginPage = () => {
             </div>
 
             <div>
-              <label className="block text-[11px] font-semibold uppercase tracking-wider text-[#A2AAA5] mb-1.5">
+              <label htmlFor="password" className="block text-[11px] font-semibold uppercase tracking-wider text-[#A2AAA5] mb-1.5">
                 Password
               </label>
               <input
+                id="password"
+                name="password"
                 type="password"
+                autoComplete="current-password"
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
                 className="w-full px-3 py-2 rounded-lg border border-[#2A302D] text-xs bg-[#222825] text-[#F5F4EF] placeholder:text-[#A2AAA5]/60 focus:outline-none focus:border-[#2A8278] transition-colors"
               />
+            </div>
+
+            <div className="flex items-center justify-between text-xs pt-0.5">
+              <label className="flex items-center gap-2 cursor-pointer text-[#A2AAA5] hover:text-[#F5F4EF] select-none">
+                <input
+                  type="checkbox"
+                  checked={rememberMe}
+                  onChange={(e) => setRememberMe(e.target.checked)}
+                  className="w-3.5 h-3.5 rounded border-[#2A302D] bg-[#222825] text-[#2A8278] focus:ring-0 cursor-pointer accent-[#2A8278]"
+                />
+                <span>Remember my email</span>
+              </label>
             </div>
 
             <button

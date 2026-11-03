@@ -20,7 +20,10 @@ export const RegisterPage = () => {
     setLoading(true);
 
     try {
-      await register(name, email, password);
+      const cleanEmail = email.trim();
+      const cleanName = name.trim();
+      localStorage.setItem('career_mentor_remembered_email', cleanEmail);
+      await register(cleanName, cleanEmail, password);
       navigate('/dashboard');
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to create account. Please try again.');
@@ -69,11 +72,14 @@ export const RegisterPage = () => {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-[11px] font-semibold uppercase tracking-wider text-[#A2AAA5] mb-1.5">
+              <label htmlFor="name" className="block text-[11px] font-semibold uppercase tracking-wider text-[#A2AAA5] mb-1.5">
                 Full Name
               </label>
               <input
+                id="name"
+                name="name"
                 type="text"
+                autoComplete="name"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -83,11 +89,14 @@ export const RegisterPage = () => {
             </div>
 
             <div>
-              <label className="block text-[11px] font-semibold uppercase tracking-wider text-[#A2AAA5] mb-1.5">
+              <label htmlFor="email" className="block text-[11px] font-semibold uppercase tracking-wider text-[#A2AAA5] mb-1.5">
                 Email Address
               </label>
               <input
+                id="email"
+                name="email"
                 type="email"
+                autoComplete="username email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -97,11 +106,14 @@ export const RegisterPage = () => {
             </div>
 
             <div>
-              <label className="block text-[11px] font-semibold uppercase tracking-wider text-[#A2AAA5] mb-1.5">
+              <label htmlFor="password" className="block text-[11px] font-semibold uppercase tracking-wider text-[#A2AAA5] mb-1.5">
                 Password
               </label>
               <input
+                id="password"
+                name="password"
                 type="password"
+                autoComplete="new-password"
                 required
                 minLength={6}
                 value={password}

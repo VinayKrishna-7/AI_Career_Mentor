@@ -5,9 +5,11 @@ import { generateToken, getCookieOptions } from '../utils/token.js';
 export const register = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
+    const cleanName = (name || '').trim();
+    const cleanEmail = (email || '').trim().toLowerCase();
 
-    // Check if user already exists
-    const existingUser = await query('SELECT id FROM users WHERE email = $1', [email]);
+    // Check if user already exists (case-insensitive)
+    const existingUser = await query('SELECT id FROM users WHERE LOWER(email) = $1', [cleanEmail]);
     if (existingUser.rows.length > 0) {
       return res.status(409).json({
         success: false,
@@ -24,7 +26,7 @@ export const register = async (req, res, next) => {
       `INSERT INTO users (name, email, password_hash)
        VALUES ($1, $2, $3)
        RETURNING id, name, email, created_at`,
-      [name, email, passwordHash]
+      [cleanName, cleanEmail, passwordHash]
     );
     const user = userRes.rows[0];
 
@@ -59,9 +61,13 @@ export const register = async (req, res, next) => {
 export const login = async (req, res, next) => {
   try {
     const { email, password } = req.body;
+    const cleanEmail = (email || '').trim().toLowerCase();
 
-    // Lookup user
-    const userRes = await query('SELECT id, name, email, password_hash, created_at FROM users WHERE email = $1', [email]);
+    // Lookup user (case-insensitive)
+    const userRes = await query(
+      'SELECT id, name, email, password_hash, created_at FROM users WHERE LOWER(email) = $1',
+      [cleanEmail]
+    );
     if (userRes.rows.length === 0) {
       return res.status(401).json({
         success: false,
