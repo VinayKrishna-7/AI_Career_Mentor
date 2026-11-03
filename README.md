@@ -2,12 +2,9 @@
 
 **Live Demo:** [https://ai-career-mentor-mfet.onrender.com](https://ai-career-mentor-mfet.onrender.com)
 
+> **Note:** The demo is hosted on Render's free tier. If the service has been idle, the server automatically sleeps to conserve resources — please allow 30–50 seconds for the initial wake-up on your first visit. Once loaded, all features run normally.
+
 AI Career Mentor is an AI-powered career guidance platform that helps users identify suitable career paths, analyze skill gaps, generate personalized learning roadmaps, improve resumes, and prepare for interviews. It provides tailored recommendations to help users achieve their career goals.
-
-[Live Demo]([https://careerly-9q76.onrender.com/](https://ai-career-mentor-mfet.onrender.com))
-
-> Note: The demo is hosted on Render's free tier. If the service has been idle, the server automatically sleeps to conserve resources—please allow 30–50 seconds for the initial wake-up on your first visit. Once loaded, all features run normally.
-
 
 ## Features
 
