@@ -1,6 +1,6 @@
 # AI Career Mentor
 
-**Live Demo:** [https://ai-career-mentor-mfet.onrender.com](https://ai-career-mentor-mfet.onrender.com)
+👉 **[Live Demo](https://ai-career-mentor-mfet.onrender.com)**
 
 > **Note:** The demo is hosted on Render's free tier. If the service has been idle, the server automatically sleeps to conserve resources — please allow 30–50 seconds for the initial wake-up on your first visit. Once loaded, all features run normally.
 
@@ -27,5 +27,5 @@ cp server/.env.example server/.env
 npm run dev
 ```
 
-- **Live Application:** [https://ai-career-mentor-mfet.onrender.com](https://ai-career-mentor-mfet.onrender.com)
+- **Live Application:** [Open Live App](https://ai-career-mentor-mfet.onrender.com)
 - **Local Application:** [http://localhost:5173](http://localhost:5173)
