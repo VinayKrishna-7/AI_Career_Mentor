@@ -59,22 +59,30 @@ export const getDashboardSummary = async (req, res, next) => {
       nextPendingTask = nextTaskRes.rows[0] || null;
     }
 
-    // 3. Skill gap summary for target career
-    const targetCareer = userData.target_career || 'Full-Stack Developer';
-    const roleRes = await query(
-      'SELECT required_skills FROM career_roles WHERE LOWER(title) = LOWER($1)',
-      [targetCareer]
-    );
-    const requiredSkills = roleRes.rows[0]?.required_skills || [
-      'JavaScript',
-      'React',
-      'Node.js',
-      'PostgreSQL',
-      'Git',
-    ];
-    const skillGap = CareerService.analyzeSkillGap(userData.skills || [], requiredSkills);
+    // 3. Skill gap summary for target career (only if user has target career and skills)
+    const targetCareer = userData.target_career;
+    const userSkills = userData.skills || [];
+    let skillGap = null;
 
-    // 4. Recent conversations
+    if (targetCareer && userSkills.length > 0) {
+      const roleRes = await query(
+        'SELECT required_skills FROM career_roles WHERE LOWER(title) = LOWER($1)',
+        [targetCareer]
+      );
+      const requiredSkills = roleRes.rows[0]?.required_skills || [];
+      if (requiredSkills.length > 0) {
+        skillGap = CareerService.analyzeSkillGap(userSkills, requiredSkills);
+      }
+    }
+
+    // 4. Latest resume analysis score (null if user has not analyzed a resume)
+    const resumeRes = await query(
+      `SELECT overall_score FROM resume_analyses WHERE user_id = $1 ORDER BY created_at DESC LIMIT 1`,
+      [req.user.id]
+    );
+    const resumeScore = resumeRes.rows.length > 0 ? (resumeRes.rows[0].overall_score ?? null) : null;
+
+    // 5. Recent conversations
     const recentConvs = await query(
       `SELECT id, title, updated_at
        FROM chat_conversations
@@ -96,6 +104,7 @@ export const getDashboardSummary = async (req, res, next) => {
       activeRoadmap,
       nextPendingTask,
       skillGap,
+      resumeScore,
       recentConversations: recentConvs.rows,
     });
   } catch (error) {

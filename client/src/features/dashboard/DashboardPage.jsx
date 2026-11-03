@@ -59,8 +59,8 @@ export const DashboardPage = () => {
     );
   }
 
-  const { activeRoadmap, nextPendingTask, skillGap } = data || {};
-  const targetCareer = user?.profile?.targetCareer || 'Full-Stack Developer';
+  const { activeRoadmap, nextPendingTask, skillGap, resumeScore } = data || {};
+  const targetCareer = user?.profile?.targetCareer || 'Select target role in profile';
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto">
@@ -107,15 +107,15 @@ export const DashboardPage = () => {
             </span>
             <div className="flex items-baseline gap-2 mt-1">
               <span className="text-2xl font-bold text-[#F5F4EF]">
-                {skillGap?.matchPercentage ?? 78}%
+                {skillGap ? `${skillGap.matchPercentage}%` : 'Not Set'}
               </span>
-              <span className="text-xs text-[#2A8278] font-medium">
-                {skillGap ? `${skillGap.matchedSkills?.length || 0} skills matched` : 'Benchmark target'}
+              <span className={`text-xs font-medium ${skillGap ? 'text-[#2A8278]' : 'text-[#A2AAA5]'}`}>
+                {skillGap ? `${skillGap.matchedSkills?.length || 0} skills matched` : 'Add skills in Profile'}
               </span>
             </div>
           </div>
           <div className="mt-3">
-            <ProgressBar progress={skillGap?.matchPercentage ?? 78} />
+            <ProgressBar progress={skillGap ? skillGap.matchPercentage : 0} />
           </div>
         </div>
 
@@ -130,12 +130,12 @@ export const DashboardPage = () => {
                 {activeRoadmap ? `${activeRoadmap.progressPercentage}%` : 'Not Started'}
               </span>
               <span className="text-xs text-[#A2AAA5]">
-                {activeRoadmap ? `${activeRoadmap.completedTasks}/${activeRoadmap.totalTasks} tasks` : 'Ready to generate'}
+                {activeRoadmap ? `${activeRoadmap.completedTasks}/${activeRoadmap.totalTasks} tasks` : 'No active roadmap'}
               </span>
             </div>
           </div>
           <p className="text-xs text-[#A2AAA5] mt-3 truncate">
-            {nextPendingTask ? `Next: ${nextPendingTask.title}` : 'Select a track to start learning'}
+            {nextPendingTask ? `Next: ${nextPendingTask.title}` : 'Generate a track to start learning'}
           </p>
         </div>
 
@@ -146,16 +146,29 @@ export const DashboardPage = () => {
               Resume Readiness
             </span>
             <div className="flex items-baseline gap-2 mt-1">
-              <span className="text-2xl font-bold text-[#F5F4EF]">
-                84<span className="text-xs font-normal text-[#A2AAA5]">/100</span>
-              </span>
-              <span className="text-xs text-[#2A8278] font-medium">
-                ATS Optimized
-              </span>
+              {resumeScore !== null && resumeScore !== undefined ? (
+                <>
+                  <span className="text-2xl font-bold text-[#F5F4EF]">
+                    {resumeScore}<span className="text-xs font-normal text-[#A2AAA5]">/100</span>
+                  </span>
+                  <span className="text-xs text-[#2A8278] font-medium">
+                    ATS Scored
+                  </span>
+                </>
+              ) : (
+                <>
+                  <span className="text-2xl font-bold text-[#A2AAA5]">
+                    --
+                  </span>
+                  <span className="text-xs text-[#A2AAA5]">
+                    Not uploaded
+                  </span>
+                </>
+              )}
             </div>
           </div>
           <Link to="/resume-analyzer" className="text-xs text-[#D5B777] hover:underline mt-3 flex items-center gap-1 font-medium">
-            <span>Review bullet rewrites</span>
+            <span>{resumeScore !== null && resumeScore !== undefined ? 'Review bullet rewrites' : 'Upload resume to analyze'}</span>
             <ArrowRight className="w-3 h-3" />
           </Link>
         </div>
